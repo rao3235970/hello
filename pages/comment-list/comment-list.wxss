@@ -1,0 +1,71 @@
+/* pages/comment-list/comment-list.wxss */
+/* 用户评论 */
+
+/* 用户评论标题 */
+
+.personTitle {
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2rpx solid #e5e5ea;
+  margin-left: 30rpx;
+}
+
+/* 评论列表 */
+
+.discussUl {
+  padding: 40rpx 30rpx;
+  border-bottom: 2rpx solid #e5e5ea;
+  overflow: hidden;
+}
+
+/* 用户头像 */
+
+.personImage {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  float: left;
+}
+
+/* 评论信息 */
+
+.discussContent {
+  float: left;
+  margin-left: 20rpx;
+}
+
+/* 用户姓名 */
+
+.discussName {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 评论时间 */
+
+.discussDate {
+  font-size: 28rpx;
+  color: #9e9e9e;
+  margin-top: 16rpx;
+}
+
+/* 评论具体内容 */
+
+.discussTextContent {
+  font-size: 30rpx;
+  color: #333;
+  margin-top: 22rpx;
+  width: 566rpx;
+  line-height: 46rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-direction: row;
+  justify-content: space-between;
+}

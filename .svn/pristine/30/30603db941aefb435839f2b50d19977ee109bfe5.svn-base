@@ -1,0 +1,39 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='layout'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <text>HSLA模式</text>
+  <text>
+H是色度，取值在0度~360度之间，0度是红色，120度是绿色，240度是蓝色。360度也是红色。
+
+S是饱和度，是色彩的纯度，是一个百分比的值，取值在0%~100%，0%饱和度最低，100%饱和度最高
+
+L是亮度，也是一个百分比值，取值在0%~100%，0%最暗，100%最亮。
+
+A是不透明度，取值在0.0~1.0，0.0完全透明，1.0完全不透明。
+
+image.png
+--------------------- 
+作者：代码湾 
+来源：CSDN 
+原文：https://blog.csdn.net/B9Q8e64lO6mm/article/details/81267381 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+</text>
+  <text>
+文字阴影text-shadow、 圆角边框border-radius、阴影box-shadow和倒影box-reflect
+text-shadow
+image.png
+
+x-shadow 必需。 水平阴影的位置。允许负值。
+
+y-shadow 必需。 垂直阴影的位置。允许负值。
+
+distance 可选。 模糊的距离
+
+color 可选。 阴影的颜色
+--------------------- 
+作者：代码湾 
+来源：CSDN 
+原文：https://blog.csdn.net/B9Q8e64lO6mm/article/details/81267381 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+</text>
+</view>

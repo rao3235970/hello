@@ -1,0 +1,5 @@
+<!--pages/eval/eval.wxml-->
+<form class="eval" bindsubmit="evalSubmit">
+    <textarea name="interlocution" placeholder="请输入评价内容" bindinput="inputs" placeholder-style="color:#C0C0C0;font-size:30rpx"/>
+    <button class="btn" formType="submit">提交</button>
+</form>

@@ -1,0 +1,5 @@
+<!--pages/video-details/video-details.wxml-->
+<!-- <text>pages/video-details/video-details.wxml</text> -->
+<view class="container">
+  <video controls='true' show-center-play-btn='true' custom-cache='{{false}}' src="{{videoSrc}}" />
+</view>

@@ -1,0 +1,2 @@
+<!--pages/help/help.wxml-->
+<button open-type="share">分享</button>

@@ -1,0 +1,13 @@
+/* pages/workStudy-details/workStudy-details.wxss */
+.contain {
+  padding: 60rpx 30rpx;
+}
+.viewTitle {
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.viewContent {
+  margin-top: 18rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+}

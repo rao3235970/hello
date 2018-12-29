@@ -1,0 +1,175 @@
+/* pages/help/help.wxss */
+@import "../../wxParse/wxParse.wxss";
+
+page{
+    display: block;
+}
+image{
+    width: 100%;
+    height:auto;
+    border:0;
+    vertical-align:text-bottom;
+}
+button::after{
+    border: none;
+}
+.swiper image{
+    height: 350rpx;
+}
+.title{
+    padding: 30rpx;
+    border-bottom: 23rpx solid #F6F6F6;
+}
+.title .money{
+    display: block;
+    font-size: 30rpx;
+    overflow: hidden;
+}
+.title .money text:first-child{
+    font-size: 35rpx;
+    font-weight: 600;
+    color: #FF135B;
+    margin-right: 20rpx;
+}
+.title .money text:nth-child(2){
+    text-decoration:line-through;
+}
+.title .money text:last-child{
+    float: right;
+}
+.title .tit{
+    margin-top: 20rpx;
+    font-size: 38rpx;
+    font-weight: 600
+}
+.title .tit text{
+    font-size: 30rpx;
+    float: right;
+    line-height: 50rpx;
+    font-weight: normal;
+}
+.more{
+    font-size: 33rpx;
+    padding: 35rpx 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+    overflow: hidden;
+}
+.more navigator{
+    float: right;
+    color: #999;
+}
+.more navigator image{
+    display: block;
+    float: right;
+    width: 16rpx;
+    height: 28rpx;
+    margin: 10rpx 0 0 15rpx;
+}
+.evaluate{
+    border-bottom: 23rpx solid #F6F6F6;
+    overflow: hidden;
+}
+.evaluate .li{
+    padding: 35rpx 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+}
+.evaluate .li .ev-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.evaluate .li .ev-title .photo{
+    width: 80rpx;
+    height:80rpx;
+    border-radius: 50rpx
+}
+.evaluate .li .ev-title .name{
+    width: 320rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.evaluate .li .ev-title .time{
+    width: 240rpx;
+    font-size: 32rpx;
+    text-align: right;
+    color: #9E9E9E
+}
+.evaluate .li .text{
+    font-size: 35rpx;
+    line-height: 50rpx;
+    margin-top: 20rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.info{
+    margin-bottom: 150rpx;
+    border-bottom: 23rpx solid #F6F6F6;
+    overflow: hidden;
+}
+.info .text{
+    padding: 30rpx;
+    font-size: 35rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+.bgn{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    background-color:rgb(102, 102, 102); 
+    filter:alpha(opacity=80);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8; 
+    opacity: 0.8; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 999; 
+    overflow: hidden;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120rpx;
+    background: #fff;
+    border-top: 1px solid #D8D8D8;
+    overflow: hidden;
+}
+.footer .service{
+    width: 25%;
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+}
+.footer .service image{
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto;
+}
+.footer .service text{
+    display: block;
+}
+.footer .btn{
+    width: 75%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    background: #2F71F6;
+}
+.footer .btn text{
+    display: block;
+    padding: 3rpx;
+    font-size: 35rpx;
+    color: #fff;
+}

@@ -1,0 +1,7 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class='layout'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  <view class='noInfo' wx:if="{{info==''}}">
+    暂无内容
+  </view>
+</view>

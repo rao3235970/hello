@@ -1,0 +1,11 @@
+<!--pages/team/team.wxml-->
+<view class="list">
+    <view class="li" wx:for="{{teamList}}" wx:key="key">
+        <view class="name">
+            <text>久久</text>
+            <text>218.88.99</text>
+        </view>
+        <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+    </view>
+    <view class="tips" wx:if="{{teamList.length==0}}">暂无数据！</view>
+</view>

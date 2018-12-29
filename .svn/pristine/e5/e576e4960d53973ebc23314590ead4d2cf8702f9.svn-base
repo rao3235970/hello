@@ -1,0 +1,83 @@
+<!-- pages/user/user.wxml -->
+<!-- 授权登录 -->
+<view class="getUserInfo" wx:if="{{UserInfo}}">
+    <view class="tips">
+        <text>申请获取以下权限</text>
+        <text>获得你的绑定手机号</text>
+    </view>
+    <!-- <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">授权登录</button> -->
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+</view>
+<!-- 个人列表 -->
+<view class="userinfo" wx:if="{{UserInfo==false}}">
+    <view class="photo">
+        <view class="pic">
+            <image src="{{avatarUrl}}" />
+        </view>
+        <view class="name">
+            <text>{{phone}}</text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_dingdan@3x.png" />
+            <navigator url="/pages/order/order" hover-class="none">我的订单</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_erwei@2x.png" />
+            <navigator url="/pages/code/code" hover-class="none">我的二维码</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_guanli@2x.png" />
+            <navigator url="/pages/team/team" hover-class="none">团队管理</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_jifen@2x.png" />
+            <navigator url="/pages/public_perspective/public_perspective" hover-class="none">
+                积分记录
+            </navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_wenda@2x.png" />
+            <navigator url="/pages/exchange/exchange" hover-class="none">我的问答</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_fabu@2x.png" />
+            <navigator url="/pages/donation-history/donation-history" hover-class="none">
+                我的发布
+            </navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_tixian@2x.png" />
+            <navigator url="/pages/help/help" hover-class="none">提现申请</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_dizhi@2x.png" />
+            <navigator url="/pages/address/address" hover-class="none">地址管理</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+    </view>
+    <view class="list">
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_kehu@2x.png" />
+            <navigator url="/pages/groupInfo/groupInfo" hover-class="none">我的客户</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+        <view class="item">
+            <image class="icon" mode="widthFix" src="{{api}}images/my_tuichu@2x.png" />
+            <navigator url="/pages/helpInfo/helpInfo" hover-class="none">退出登录</navigator>
+            <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" />
+        </view>
+    </view>
+</view>

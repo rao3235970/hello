@@ -1,0 +1,7 @@
+<!--pages/workStudy-details/workStudy-details.wxml-->
+<!-- <text>pages/workStudy-details/workStudy-details.wxml</text> -->
+<view class="contain">
+    <view class="viewTitle">{{contentTextUrl.answer_title}}</view>
+    <view class="viewContent">{{contentTextUrl.answer_content}}</view>
+    <view class="viewContent">{{contentTextUrl.answer_details}}</view>
+</view>

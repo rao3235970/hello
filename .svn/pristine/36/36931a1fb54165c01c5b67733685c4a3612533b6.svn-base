@@ -1,0 +1,43 @@
+/* pages/study-detail/study-detail.wxss */
+.banner {
+  width: 100%;
+  height: 470rpx;
+}
+.textTitle {
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.textDate {
+  display: block;
+  font-size: 14px;
+  color: #333333;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.textMoney {
+  color: #ff135b;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+.textSmall {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.textCrestor {
+  display: block;
+  float: left;
+}
+.textOneself {
+  display: block;
+  float: left;
+  margin-left: 40rpx;
+}

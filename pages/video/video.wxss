@@ -1,0 +1,48 @@
+/* pages/video/video.wxss */
+.video textarea{
+    height: 100rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    padding: 30rpx;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.video .btn{
+    display: block;
+    width: 70%;
+    font-size: 35rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 120rpx auto;
+    text-align: center;
+    background: #0084FF;
+    color: #fff;
+    border-radius: 50rpx;
+    overflow: hidden;
+
+}
+.video .title{
+    font-size: 30rpx;
+    line-height: 50rpx;
+    padding-bottom: 30rpx
+}
+.video .upload{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx;
+}
+.video .upimg,.upvideo{
+    width: 50%;
+    overflow: hidden;
+}
+.video .upimg image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.video .upvideo image,video{
+    width: 200rpx;
+    height: 200rpx;
+}

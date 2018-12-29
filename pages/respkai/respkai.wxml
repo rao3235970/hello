@@ -1,0 +1,6 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <input  type='text' name='enroll_name' placeholder='请输入姓名' class='common' value="{{enroll_name}}"></input>
+  <input  type='number' name='enroll_tel' placeholder='请输入电话' class='common' value="{{enroll_tel}}"></input>
+  <!-- 提交按钮 -->
+  <button class="formbtn" formType="submit">立即预约</button>
+</form>

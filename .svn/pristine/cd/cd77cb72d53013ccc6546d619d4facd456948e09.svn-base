@@ -1,0 +1,17 @@
+
+<view class="contentBig">
+  <navigator class="content" wx:for="{{schoolInfo}}" data-item="{{item}}" hover-class='none' url="/pages/university-details/university-details?school_id={{item.school_id}}">
+    <text class="contentTitle">{{item.school_name}}</text>
+    <image src="{{item.school_cover}}" class="contentImage"></image>
+    <view class="contentText">
+      <text>学校类型:{{item.school_type_name}}</text>
+      <text>所在地区:{{item.school_area}}</text>
+      <text>教育领域:{{item.school_edu}}</text>
+      <text>电  话:{{item.school_tel}}</text>
+      <text>地  址:{{item.school_address}}</text>
+    </view>
+  </navigator>
+</view>
+<view class='noInformation' wx:if="{{schoolInfo.length==0}}">
+  没有找到相关信息
+</view>

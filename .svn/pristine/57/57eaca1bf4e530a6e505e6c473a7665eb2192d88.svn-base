@@ -1,0 +1,333 @@
+/* pages/university-details/university-details.wxss */
+
+/* 图片 */
+
+.imageView {
+  display: block;
+  width: 100%;
+  height: 470rpx;
+}
+
+/* 信息 */
+
+.viewInform {
+  border-bottom: 20rpx solid #f7f7f7;
+  padding: 40rpx 30rpx;
+}
+
+/* 标题 */
+
+.schoolName {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 类型和领域 */
+
+.viewType {
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+  margin-top: 22rpx;
+}
+
+/* 学校领域 */
+
+.schoolField {
+  margin-top: 30rpx;
+}
+
+/* 地区和电话 */
+
+.viewArea {
+  margin-top: 22rpx;
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+  margin-left: 84rpx;
+}
+
+/* 学校电话 */
+
+.schoolTel {
+  margin-top: 30rpx;
+}
+
+/* 类型领域地区电话模块 */
+.viewText {
+  overflow: hidden;
+}
+/* 地址 */
+.schoolAddress {
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  /* 做限制 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 698rpx;
+  height: 32rpx;
+}
+/* 基本信息 */
+.basicInform {
+  padding: 40rpx 30rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+  color: #333333;
+}
+/* 基本信息标题 */
+.basicTitle {
+  font-size: 32rpx;
+}
+.basicDate {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.basicScale {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.basicFacility {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+/* 小星星 */
+.viewTitleText {
+  float: left;
+}
+.viewStar {
+  overflow: hidden;
+  margin-left: 6rpx;
+  float: left;
+}
+.viewStar image {
+  display: block;
+  width: 34rpx;
+  height: 34rpx;
+  float: left;
+  margin-left: 6rpx;
+}
+.basicCondition {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.basicLocation {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 698rpx;
+  height: 32rpx;
+}
+/* 学生关心 */
+.studentCare {
+  padding: 40rpx 30rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+}
+/* 学生关心标题 */
+.studentTitle {
+  font-size: 32rpx;
+  color: #333333;
+}
+.recruitContent {
+  font-size: 28rpx;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 696rpx;
+  height: 364rpx;
+  line-height: 48rpx;
+  margin-top: 22rpx;
+}
+/* 学校环境 */
+.schoolEnvir {
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+}
+/* 标题1*/
+.envirTitle {
+  font-size: 32rpx;
+  color: #333333;
+  margin-left: 30rpx;
+}
+.viewVideo {
+    margin-top: 30rpx;
+    overflow: hidden;
+}
+/* 视频封面和播放按钮 */
+.videoCover {
+  overflow: hidden;
+  margin-left: 30rpx;
+  float: left;
+  position: relative;
+}
+.play {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 120rpx;
+  top: 36rpx;
+}
+.videoImg {
+  display: block;
+  width: 296rpx;
+  height: 166rpx;
+}
+.schoolEnvirVi {
+  padding-bottom: 42rpx;
+}
+  /* 标题2*/
+  .envirTitleVi {
+    font-size: 32rpx;
+    color: #333333; 
+    margin-top: 30rpx;
+    margin-left: 30rpx;
+  }
+  /* 文字说明 */
+  .videoContent {
+    width: 296rpx;
+    height: 40rpx;
+    color: #333333;
+    font-size: 28rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1;     
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20rpx;
+  }
+/* 视频样式 */
+/* .flex {
+  display: flex;
+  } */
+/* .around {
+  justify-content: space-around;
+  margin-top: 20rpx;
+  }
+.h100 {
+  height:100rpx;
+  } */
+/* 播放按钮 */
+/* .icon-videoPlay{
+  display: flex;align-items: center;justify-content: center;
+  width:60rpx;height:60rpx; */
+  /* background-color:rgba(0,0,0,.5); */
+  /* border-radius: 50%;
+  border:solid 2px #fff;
+  background: #000;color:#fff;
+  text-align:center;
+} */
+/* .wxParse-video{
+    text-align: center;
+    margin: 10px 0;
+}
+.wxParse-video-video{
+    width:100%;
+} */
+/*视频列表封面  */
+/* .controls {
+  position: relative;
+  height: 100%;
+  margin-top: 0;
+  display: flex;
+  color: #fff;
+} */
+/* 视频缩略图 */
+/* .img_block{
+  width:100px;
+  height:100px;line-height:100px;
+  background: #dcdcdc;
+  text-align: center;
+  display: inline-block;
+}
+.img_block image {
+  width: 100%;
+  height: 100%;
+} */
+/* 环境图片 */
+/* .schoolImage {
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.envirImage {
+  display: block;
+  float: left;
+  margin-left: 30rpx;
+  width: 296rpx;
+  height: 166rpx;
+} */
+/* swiper {
+  height: 166rpx;
+  display: block;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.slide-image {
+  width: 296rpx;
+  height: 166rpx;
+}
+swiper-item {
+  width: 316rpx;
+  margin: 0rpx;
+  padding: 0rpx;
+  transform: translate(0%,0rpx);
+} */
+/* 图片滚动 */
+.box-sv {
+  width: 700rpx;
+  padding: 20rpx 0;
+  height: 176rpx;
+  white-space:nowrap;
+  margin:3% auto;
+  }
+.box-sv image {
+  width: 296rpx;
+  height: 178rpx;
+  margin-right: 20rpx;
+  border-radius: 5px;
+  }
+  /* .videoSrc {
+    width: 292rpx;
+    height: 166rpx;
+    margin-right:23rpx;
+  } */
+  /* 底部按钮 */
+  .bottomView {
+    border-top: 1rpx solid #D8D8D8;
+    overflow: hidden;
+  }
+  /* 返回首页 */
+  .viewReturn {
+    width: 374rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    color: #333333;
+    font-size: 34rpx;
+    float: left;
+  }
+  /* 免费留学评估 */
+  .viewFree {
+    width: 376rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    background-color: #2F71F6;
+    color: #FFFFFF;
+    font-size: 34rpx;
+    float: left;
+  }

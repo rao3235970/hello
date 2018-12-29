@@ -1,0 +1,54 @@
+<!-- pages/exchange/exchange.wxml -->
+<view class="tabNav">
+  <view class="nav">
+    <view class="tab {{already?'active':''}}" bindtap="already">
+      <text>问答专区</text>
+    </view>
+    <view class="tab {{not?'active':''}}" bindtap="not">
+      <text>视频专区</text>
+    </view>
+    <navigator class="message" hover-class="none" url="/pages/message/message"><image src="{{api}}images/jiaoliu_xiaoxi@2x.png" /></navigator>
+  </view>
+  <view class="list {{already?'show':'hidden'}}">
+    <view class="li" wx:for="{{exchList}}" wx:key="key">
+      <navigator class="title" hover-class="none" url="/pages/question-info/question-info?inter_id={{item.interlocution_id}}">
+        {{item.interlocution_title}}
+      </navigator>
+      <navigator class="text" hover-class="none" url="">
+        <text wx:if="{{item.com.user.nickname==''}}">匿名</text>
+        <text wx:else>{{item.com.user.nickname}}</text>
+        <text>{{item.com.comment_content}}</text>
+      </navigator>
+      <view class="tag">
+        <!-- <view class="more">全部{{item.interlocution_num}}个回答</view> -->
+        <navigator class="msg" hover-class="none" url="">
+          <image class="msgImg" src="{{api}}images/jiaoliu_pinglun@2x.png" />
+          <text>{{item.msgnum}}</text>
+        </navigator>
+      </view>
+    </view>
+    <navigator class="add" hover-class="none" url="/pages/question/question">
+      <image src="{{api}}images/jiaoliu_tiwen@2x.png" />
+    </navigator>
+    <view class="tips" wx:if="{{exchList==''}}">暂无数据</view>
+  </view>
+  <view class="video {{not?'show':'hidden'}}">
+    <view class="li" wx:for="{{videoList}}" wx:key="key">
+      <navigator class="video" hover-class="none" url="/pages/video-info/video-info?video_id={{item.video_id}}">
+        <image class="videoImg" src="https://yxtsjs.yuxwl.top/uploads/20181010/85531d07306304a6493e9ff8bfd63cac.jpg" />
+        <image class="play" src="{{api}}images/shipin_bofang@2x.png" />
+      </navigator>
+      <view class="tag">
+        <view class="title">{{item.video_title}}</view>
+        <navigator class="msg" hover-class="none" url="">
+          <image class="msgImg" src="{{api}}images/jiaoliu_pinglun@2x.png" />
+          <text>{{item.msgnum}}</text>
+        </navigator>
+      </view>
+    </view>
+    <navigator class="add" hover-class="none" url="/pages/video/video">
+      <image src="{{api}}images/jiaoliu_tiwen@2x.png" />
+    </navigator>
+    <view class="tips" wx:if="{{videoList==''}}">暂无数据</view>
+  </view>
+</view>

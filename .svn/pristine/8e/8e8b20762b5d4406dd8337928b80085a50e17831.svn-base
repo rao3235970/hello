@@ -1,0 +1,16 @@
+
+<block wx:if="{{state==1}}">
+  <image src='{{code}}' class='code'></image>
+</block>
+<block wx:elif="{{state==0}}">
+  <view>
+  <image src='../../images/shenq_erweima.png' class='no-ecode'></image>
+</view>
+<text class='text'>正在审核...</text>
+</block>
+<block wx:else>
+  <view>
+  <image src='../../images/shenq_erweima.png' class='no-ecode'></image>
+</view>
+<button bindtap='join'>申请成为代理</button>
+</block>

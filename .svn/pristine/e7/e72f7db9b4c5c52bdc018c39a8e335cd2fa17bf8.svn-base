@@ -1,0 +1,97 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx522a6cbf917d1ce6",
+	"projectname": "dispatch",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的问答",
+					"pathName": "pages/my-question/my-question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的二维码",
+					"pathName": "pages/code/code",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分记录",
+					"pathName": "pages/integral-list/integral-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的客户",
+					"pathName": "pages/my-customer/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现申请",
+					"pathName": "pages/cash/cash",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的发布",
+					"pathName": "pages/my-release/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "线上学习",
+					"pathName": "pages/on_line/on_line",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "答疑解惑",
+					"pathName": "pages/faq/faq"
+				}
+			]
+		}
+	}
+}

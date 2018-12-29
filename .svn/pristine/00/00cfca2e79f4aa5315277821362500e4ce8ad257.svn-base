@@ -1,0 +1,65 @@
+<!-- pages/helpInfo/helpInfo.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <!-- <block wx:for="{{product}}" wx:key="key"> -->
+            <swiper-item>
+                <image src="{{info.product.p_thumbs}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        <!-- </block> -->
+    </swiper>
+    <view class="title">
+        <image class="photo" src="{{info.user.avatar}}" />
+        <view class="name">{{info.user.nickname}}</view>
+    </view>
+    <view class="rule" bindtap="rule">活动规则</view>
+</view>
+<view class="title">
+    <view class="tit">{{info.product.p_name}}</view>
+    <view class="price">
+        ¥{{info.product.p_realprice}}
+        <text>已有{{info.product.p_number}}人1元领取</text>
+    </view>
+    <view class="now">
+        <progress percent="{{info.percentage}}" active activeColor="#FF135B" backgroundColor="#FFD9E5" border-radius="50" />
+        <view class="progress">
+            <text>已砍{{info.money.cut_price}}元</text>
+            <text>还剩{{info.money.price}}元</text>
+        </view>
+    </view>
+</view>
+<!-- 助力榜 -->
+<view class="list">
+    <view class="tab">助力榜</view>
+    <view class="li" wx:for="{{cutdetail}}"  wx:key="{{cutdetail}}">
+        <image class="photo" src="{{item.avatar}}" />
+        <view class="name">{{item.nickname}}</view>
+        <view class="price">助力{{item.cut_price}}元</view>
+    </view>
+    <view class="tips" wx:if="{{cutdetail.length==0}}">暂无助力人员！</view>
+</view>
+<!--分享-->
+<view class="share" wx:if="{{share}}">
+    <view class="tit">邀请好友即可领取1元签证</view>
+    <button open-type="share">
+        <image src="{{api}}images/wx@2x.png" />
+        <text class="text">转发给好友</text>
+    </button>
+</view>
+<view class="bgn" wx:if="{{bgn}}" bindtap='isGsysb'></view>
+<!-- 说明 -->
+<view class="description" bindtap="desc" wx:if="{{desc}}">
+    <view class="tit">活动规则</view>
+    <view class="content">
+        <text>1.邀请好友一起砍价，砍到1元即可领取商品；</text>
+        <text>2.对于同一个助力，只能帮助砍一次。</text>
+    </view>
+    <view class="confirm">确定</view>
+</view>
+<view class="bgn" wx:if="{{bgn}}"  bindtap='isGsysb'></view>
+<view class="footer" wx:if="{{info.sta==1}}">
+    <button class="btn" bindtap="helpBtn" wx:if="{{btn}}">喊好友助力</button>
+    <button class="btn" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo" wx:if="{{btns}}">帮好友助力</button>
+    <button class="btn" bindtap="payOrder" data-type="3" data-index="1" wx:if="{{pay}}">去支付</button>
+     <button class="btn"wx:if="{{pays}}">您已领取</button>
+</view>

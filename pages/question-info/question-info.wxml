@@ -1,0 +1,36 @@
+<!-- pages/question-info/question-info.wxml -->
+<view class="question-info">
+    <view class="questioner">
+        <view class="photo">
+            <image src="{{inter.avatar}}" />
+        </view>
+        <view class="right">
+            <view class="name">
+                <view class="nickname" wx:if="{{inter.nickname==''}}">匿名</view>
+                <view class="nickname" wx:else>{{inter.nickname}}</view>
+                <view class="time">发布于{{inter.interlocution_createtime}}</view>
+            </view>
+            <view class="text">{{inter.interlocution_title}}</view>
+            <view class="num" wx:if="{{num!=0}}">共{{num}}个回答</view>
+            <view class="tag"></view>
+        </view>
+    </view>
+    <view class="answer" wx:for="{{comment}}" wx:key="key">
+        <view class="photo">
+            <image src="{{item.avatar}}" />
+        </view>
+        <view class="right">
+            <view class="name">
+                <view class="nickname" wx:if="{{item.nickname==''}}">匿名</view>
+                <view class="nickname" wx:else>{{item.nickname}}</view>
+                <view class="time">{{item.comment_createtime}}</view>
+            </view>
+            <view class="text">{{item.comment_content}}</view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{comment==''}}">暂无回答！</view>
+    <view class="btn">
+        <navigator hover-class="none" bindtap="index">返回首页</navigator>
+        <navigator hover-class="none" url="/pages/answer/answer?interlocution_id={{inter.interlocution_id}}&interlocution_title={{inter.interlocution_title}}">我要回答</navigator>
+    </view>
+</view>

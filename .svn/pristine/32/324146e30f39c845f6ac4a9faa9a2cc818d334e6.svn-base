@@ -1,0 +1,8 @@
+<!--pages/activity-details/activity-details.wxml-->
+<!-- <text>pages/activity-details/activity-details.wxml</text> -->
+<view class="contain">
+  <view class="viewTitle">{{contentTextUrl.article_title}}</view>
+  <view class="viewDate">{{contentTextUrl.article_publish_date }}</view>
+  <view class="viewContent">{{contentTextUrl.article_content}}</view>
+  <image src="{{contentTextUrl.article_img}}" class="imageContent"></image>
+</view>

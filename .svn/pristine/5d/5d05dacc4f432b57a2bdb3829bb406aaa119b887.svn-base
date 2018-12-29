@@ -1,0 +1,672 @@
+/* pages/study-detail/study-detail.wxss */
+
+/* .banner {
+  display: block;
+  width: 100%;
+  height: 470rpx;
+} */
+@import "../../wxParse/wxParse.wxss";
+
+/* 轮播图 */
+
+swiper {
+  height: 470rpx;
+}
+
+.swiper image {
+  height: 470rpx;
+}
+
+/* 基本信息 */
+
+.basicInform {
+  padding: 40rpx 30rpx;
+  border-bottom: 20rpx solid #f6f6f6;
+}
+
+/* 景区名 */
+
+.scenicName {
+  font-size: 40rpx;
+  color: #333;
+  font-weight: 900;
+}
+
+/* 旅游时间 */
+
+.scenicDate {
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+
+/* input和价格 */
+
+.viewMoney {
+  margin-top: 42rpx;
+  overflow: hidden;
+}
+
+/* 旅游价格 */
+
+.scenicMoney {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #ff135b;
+  width: 198rpx;
+  float: left;
+}
+
+/* 加减input框 */
+
+/*主容器*/
+
+.stepper {
+  width: 176rpx;
+  height: 52rpx;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 6rpx;
+  float: left;
+  margin-left: 318rpx;
+}
+
+/*加号和减号*/
+
+.stepper text {
+  float: left;
+  width: 38rpx;
+  line-height: 52rpx;
+  text-align: center;
+  color: #333;
+  margin-left: 6rpx;
+}
+
+/*数值*/
+
+.stepper input {
+  width: 80rpx;
+  height: 52rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #333;
+}
+
+/*普通样式*/
+
+.stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.stepper .disable {
+  color: #ccc;
+}
+
+/* 规定 */
+
+.viewRuler {
+  margin-top: 10rpx;
+  overflow: hidden;
+}
+
+/* 12月可定 */
+
+.scenicReserve {
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+}
+
+/* 往返自理 */
+
+.scenicSelf {
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+  margin-left: 40rpx;
+}
+
+/* 评论和查看更多*/
+
+.viewDiscuss {
+  padding: 30rpx;
+  border-bottom: 20rpx solid #f6f6f6;
+  overflow: hidden;
+}
+
+/* 评论 */
+
+.discussText {
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+}
+
+/* 查看更多 */
+
+.discussMore {
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+  margin-left: 430rpx;
+}
+
+/* 小箭头 */
+
+.imageMore {
+  width: 26rpx;
+  height: 26rpx;
+  display: block;
+  float: left;
+  margin-left: 3.6rpx;
+  margin-top: 6rpx;
+}
+
+/* 行程介绍 */
+.tourIntro {
+  padding-bottom: 40rpx;
+  padding-left: 30rpx;
+  border-bottom: 2rpx solid #e5e5ea;
+}
+/* 行程介绍标题 */
+.introTitle {
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 32rpx;
+  color: #333333;
+  border-bottom: 2rpx solid #E5E5EA;
+}
+/* 行程介绍内容 */
+.introContent {
+  padding-right: 20rpx;
+  font-size: 36rpx;
+  color: #454545;
+  margin-top: 40rpx;
+  line-height: 74rpx;
+}
+/* 行程介绍图片 */
+.introImage {
+  display: block;
+  margin-right: 30rpx;
+  width: 690rpx;
+  height: 380rpx;
+  margin-top: 60rpx;
+}
+/* 地址和出行路线 */
+
+.tourLocation {
+  padding: 30rpx;
+  border-bottom: 20rpx solid #f6f6f6;
+  font-size: 28rpx;
+  color: #7d7d7d;
+}
+
+/* 地址 */
+
+.tourAddress {
+  overflow: hidden;
+}
+
+/* 地址图片 */
+
+.addressImage {
+  float: left;
+  width: 28rpx;
+  height: 28rpx;
+  display: block;
+  margin-top: 2rpx;
+}
+
+/* 地址信息 */
+
+.addressContent {
+  float: left;
+  margin-left: 8rpx;
+}
+
+/* 出行路线 */
+
+.tourTravel {
+  overflow: hidden;
+  margin-top: 16rpx;
+}
+
+/* 出行路线图片 */
+
+.travelImage {
+  width: 28rpx;
+  height: 28rpx;
+  display: block;
+  float: left;
+  margin-top: 10rpx;
+}
+
+/* 出行路线信息 */
+
+.travelContent {
+  float: left;
+  margin-left: 8rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 606rpx;
+  height: 76rpx;
+  line-height: 42rpx;
+}
+
+/* 用户评论 */
+
+/* 用户评论标题 */
+
+.personTitle {
+  height: 112rpx;
+  line-height: 112rpx;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 2rpx solid #e5e5ea;
+  margin-left: 30rpx;
+}
+
+/* 评论列表 */
+
+.discussUl {
+  padding: 40rpx 30rpx;
+  border-bottom: 2rpx solid #e5e5ea;
+  overflow: hidden;
+}
+
+/* 用户头像 */
+
+.personImage {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  float: left;
+}
+
+/* 评论信息 */
+
+.discussContent {
+  float: left;
+  margin-left: 20rpx;
+}
+
+/* 用户姓名 */
+
+.discussName {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 评论时间 */
+
+.discussDate {
+  font-size: 28rpx;
+  color: #9e9e9e;
+  margin-top: 16rpx;
+}
+
+/* 评论具体内容 */
+
+.discussTextContent {
+  font-size: 30rpx;
+  color: #333;
+  margin-top: 22rpx;
+  width: 566rpx;
+  line-height: 46rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .textTitle {
+  display: block;
+  font-size: 40rpx;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.textDate {
+  display: block;
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.viewText {
+  float: left;
+}
+.textMoney {
+  color: #ff135b;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+.textSmall {
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.textCrestor {
+  display: block;
+  float: left;
+}
+.textOneself {
+  display: block;
+  float: left;
+  margin-left: 40rpx;
+} */
+
+/* 第一条宽条线 */
+
+/* .wideLineFirst {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 196rpx;
+}
+.textDiscuss {
+  font-size: 28rpx;
+  color: #333333;
+  display: block;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.textMore {
+  font-size: 28rpx;
+  color: #999999;
+  display: block;
+  margin-top: 30rpx;
+  margin-left: 430rpx;
+  float: left;
+}
+.imageMore {
+  width: 24rpx;
+  height: 24rpx;
+  display: block;
+  float: left;
+  margin-top: 36rpx;
+  margin-left: 9.6rpx;
+} */
+
+/* 第二条宽条线 */
+
+/* .wideLineSecond {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 100rpx;
+} */
+
+/* 行程介绍 */
+
+/* .contentTitle {
+  display: block;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #333333;
+} */
+
+/* 细线 */
+
+/* .thinLine {
+  width: 720rpx;
+  height: 2rpx;
+  background-color: #e5e5ea;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+} */
+
+/* 行程介绍内容 */
+
+/* .contentText {
+  width: 100%;
+  text-align: center;
+} */
+
+/* 图片 */
+
+/* .contentText image {
+  width: 690rpx;
+  height: 380rpx;
+  display: block;
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+} */
+
+/* 第一段内容 */
+
+/* .firstParagraph {
+  display: block;
+  font-size: 36rpx;
+  color: #454545;
+  text-indent: 72rpx;
+  text-align: left;
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+  line-height: 54rpx;
+} */
+
+/* 第二段内容 */
+
+/* .otherParagraph {
+  display: block;
+  font-size: 36rpx;
+  color: #454545;
+  text-indent: 72rpx;
+  text-align: left;
+  width: 690rpx;
+  margin-left: 30rpx;
+  margin-top: 60rpx;
+  line-height: 54rpx;
+} */
+
+/* 地址信息 */
+
+/* .contentAddress {
+  margin-top: 50rpx;
+  width: 100%;
+  border-top: 1px solid #e5e5ea;
+}
+.viewAddress {
+  margin-top: 20rpx;
+}
+.viewAddress image {
+  width: 22rpx;
+  height: 28rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  display: block;
+  float: left;
+}
+.viewAddress text {
+  font-size: 28rpx;
+  color: #7d7d7d;
+  margin-left: 12rpx;
+  text-align: center;
+  display: inline-block;
+}
+.viewRoute {
+  margin-top: 16rpx;
+  width: 658rpx;
+  line-height: 44rpx;
+}
+.viewRoute image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  display: block;
+  float: left;
+} */
+
+/* .viewRoute text {
+  font-size: 28rpx;
+  color: #7d7d7d;
+  margin-left: 66rpx;
+  display: block;
+} */
+
+/* 第三条宽条线 */
+
+/* .wideLineThird {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 40rpx;
+} */
+
+/* 用户评论 */
+
+/* .viewTitle {
+  width: 720rpx;
+  margin-left: 30rpx;
+  border-bottom: 2rpx solid #E5E5EA;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+} */
+
+/* 标题 */
+
+/* .discussTitle {
+  margin: 0rpx;
+  padding: 0rpx;
+  font-size: 32rpx;
+  color: #333333;
+} */
+
+/* 评论列表 */
+
+/* .discussList {
+  width: 100%;
+  border-bottom: 2rpx solid #E5E5EA;
+  padding-left: 30rpx;
+  padding-bottom: 40rpx;
+  overFlow: hidden;
+} */
+
+/* 头像 */
+
+/* .viewImage {
+  width: 80rpx;
+  height: 80rpx;
+  display: block;
+  float: left;
+  margin-top: 40rpx;
+} */
+
+/* 文字信息 */
+
+/* .discussText {
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+}
+.discussText text {
+  display: block;
+  margin: 0rpx;
+  padding: 0rpx;
+}
+.discussName {
+  font-size: 32rpx;
+  color: #333333;
+}
+text.discussDate {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #9E9E9E;
+}
+text.discussContent {
+  margin-top: 30rpx;
+  font-size: 30rpx;
+  color: #333333;
+  width: 590rpx;
+  line-height: 46rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+/* .contentDiscuss {
+  width: 100%;
+}
+.titleDiscuss {
+  display: block;
+  font-size: 32rpx;
+  color: #333333;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+}
+.thinLineSecond {
+  width: 720rpx;
+  height: 4rpx;
+  background-color: #e5e5ea;
+  margin-left: 30rpx;
+  margin-top: 40rpx; 
+}
+/* 评论列表 */
+
+/* .commentList {
+  margin-top: 40rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #e5e5ea;
+}
+.commentList image {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.listText {
+  float: left;
+  margin-left: 20rpx;
+}
+.listText text {
+  display: block;
+}
+.listName {
+  font-size: 32rpx;
+  color: #333333;
+}
+.listDate {
+  font-size: 28rpx;
+  color: #9e9e9e;
+  margin-top: 14rpx;
+}
+.listContent {
+  font-size: 30rpx;
+  color: #333333;
+  width: 590rpx;
+  line-height: 46rpx;
+  margin-top: 24rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.longThinLine {
+  width: 100%;
+  height: 4rpx;
+  background-color: #e5e5ea;
+  margin-top: 324rpx;
+} */

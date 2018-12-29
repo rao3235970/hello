@@ -1,0 +1,3 @@
+<!--pages/video-details/video-details.wxml-->
+<!-- <text>pages/video-details/video-details.wxml</text> -->
+<video controls='true' show-center-play-btn='true' custom-cache='{{false}}' poster='{{inter.video_cover}}' src="{{inter.video_content}}" />

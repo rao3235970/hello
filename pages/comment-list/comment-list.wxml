@@ -1,0 +1,16 @@
+<!--pages/comment-list/comment-list.wxml-->
+<!-- <text>pages/comment-list/comment-list.wxml</text> -->
+<!-- 用户评论 -->
+<view class="personView">
+  <!-- 标题 -->
+  <view class="personTitle">用户评论</view>
+  <!-- 评论列表 -->
+  <view class="discussUl" wx:for="{{comment}}">
+    <image src="{{item.thumb}}" class="personImage"></image>
+    <view class="discussContent">
+      <view class="discussName">{{item.name}}</view>
+      <view class="discussDate">{{item.createtime}}</view>
+      <view class="discussTextContent">{{item.content}}</view>
+    </view>
+  </view>
+</view>

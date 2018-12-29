@@ -1,0 +1,35 @@
+<!-- pages/message/message.wxml -->
+<view class="question-info">
+    <view class="answer" wx:for="{{info}}" wx:key="key">
+        <view wx:if="{{item.type==1}}">
+            <view class="photo">
+                <image src="{{item.avatar}}" />
+            </view>
+            <view class="right">
+                <view class="name">
+                    <view class="nickname" wx:if="{{item.nickname==''}}">匿名</view>
+                    <view class="nickname" wx:else>{{item.nickname}}</view>
+                    <view class="time">{{item.comment_createtime}}</view>
+                </view>
+                <view class="text">{{item.interlocution_title}}</view>
+                <view class="text">{{item.comment_content}}</view>
+            </view>
+        </view>
+        <view wx:if="{{item.type==2}}">
+            <view class="photo">
+                <image src="{{item.avatar}}" />
+            </view>
+            <view class="right">
+                <view class="name">
+                    <view class="nickname" wx:if="{{item.nickname==''}}">匿名</view>
+                    <view class="nickname" wx:else>{{item.nickname}}</view>
+                    <view class="time">{{item.vcomment_createtime}}</view>
+                </view>
+                <view class="text">{{item.video_title}}</view>
+                <video controls='true' show-center-play-btn='true' custom-cache='{{false}}' poster='{{item.video_cover}}' src="{{item.video_content}}" />
+                <view class="text">{{item.vcomment_content}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{info==''}}">暂无回答！</view>
+</view>

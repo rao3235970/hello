@@ -1,0 +1,32 @@
+<!-- <view class='tab'>
+  <text class='{{tabState==1?"active":""}}' data-tab='1' bindtap='tab'>我的账户</text>
+  <text class='{{tabState==2?"active":""}}' data-tab='2' bindtap='tab'>冻结账户</text>
+</view> -->
+<block>
+  <view class="head">
+    <image src='../../images/jf_bj.png'></image>
+    <!-- <text class="integral-exchange">积分兑换</text> -->
+    <view class='right_integral'></view>
+    <view class='left_integral'>
+       <text class='Total'>总积分</text>
+       <text class='integral'>{{numcount}}</text>
+    </view>
+    
+  </view>
+  <view class='list'>
+     <view class='item'  wx:for="{{data}}" wx:if="{{data.length}}" data-item="{{item}}">
+      <view class='top'>
+        <view class='left'>
+        <text class='name'>{{item.nickname}}</text>
+          <text class='state'>{{item.acc_state}}</text>
+        </view>
+        <view class='right'>
+          <text>{{item.acc_money}}</text>
+        </view>
+      </view>
+      <view class='time'>
+        {{item.acc_addtime}}
+      </view>
+    </view>
+  </view>
+</block>

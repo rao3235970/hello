@@ -1,0 +1,35 @@
+/* pages/qr_code/ot.wxss */
+image{
+width:422rpx;
+height:424rpx;
+margin:156rpx auto;
+display:block;
+
+
+
+}
+
+.common{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+}
+.formbtn {
+  width: 70%;
+  font-size: 35rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 120rpx auto;
+  text-align: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 50rpx;
+}
+
+.picker{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}

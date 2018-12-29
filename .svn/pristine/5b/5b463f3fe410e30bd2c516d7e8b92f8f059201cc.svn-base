@@ -1,0 +1,83 @@
+<!-- pages/study-detail/study-detail.wxml -->
+<import src="../../wxParse/wxParse.wxml" />
+<!-- 轮播图 -->
+<view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}"  width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 基本信息 -->
+<view class="basicInform">
+  <view class="scenicName">{{imgTitle.tour_title}}</view>
+  <view class="scenicDate">{{imgTitle.start_time}}游玩</view>
+  <view class="viewMoney">
+    <view class="scenicMoney">¥{{imgTitle.tour_ticket}}</view>
+    <!-- 加减input框 -->
+    <view class='stepper'>
+      <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+      <input bindinput='bindManual' value='{{num}}'></input>
+      <text bindtap='bindPlus'>+</text>
+    </view>
+  </view>
+  <view class="viewRuler">
+    <view class="scenicReserve">{{imgTitle.tour_destine}}</view>
+    <view class="scenicSelf">{{imgTitle.tour_details}}</view>
+  </view>
+</view>
+<!-- 评论 -->
+<view class="viewDiscuss">
+  <view class="discussText">评论({{comment}})</view>
+  <navigator url='/pages/comment-list/comment-list' hover-class='none'>
+    <view class="discussMore">查看更多</view>
+    <image src="{{api}}images/titlebackcopy15@3x.png" class="imageMore"></image>
+  </navigator>
+</view>
+<!-- 行程介绍 -->
+<view class="tourIntro">
+  <view class="introTitle">行程介绍</view>
+  <view class="introContent">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+  <image src="{{imgTitle.tour_img}}" class="introImage"></image>
+</view>
+<!-- 地址和出行路线 -->
+<view class="tourLocation">
+  <!-- 地址 -->
+  <view class="tourAddress">
+    <image src="{{api}}images/address.png" class="addressImage"></image>
+    <view class="addressContent">地址:{{imgTitle.tour_address}}</view>
+  </view>
+  <!-- 出行路线 -->
+  <view class="tourTravel">
+    <image src="{{api}}images/yytenterplace@2x.png" class="travelImage"></image>
+    <view class="travelContent">出行路线:{{imgTitle.tour_rose}}</view>
+  </view>
+</view>
+<!-- 用户评论 -->
+<view class="personView">
+  <!-- 标题 -->
+  <view class="personTitle">用户评论</view>
+  <!-- 评论列表 -->
+  <view class="discussUl" wx:for="{{imgDiscuss}}">
+    <image src="{{item.avatar}}" class="personImage"></image>
+    <view class="discussContent">
+      <view class="discussName">{{item.nickname}}</view>
+      <view class="discussDate">{{item.createtime}}</view>
+      <view class="discussTextContent">{{item.content}}</view>
+    </view>
+  </view>
+</view>
+<!-- 底部悬浮框 -->
+<view class="buttomView">
+  <!-- 实付款 -->
+  <view class="payment">
+    <view class="paymentText">实付款：</view>
+    <view class="paymentMoney">￥{{actulPay}}</view>
+  </view>
+  <!-- 立即预订 -->
+  <view class="Reserve" bindtap='onClick'>立即预订</view>
+</view>

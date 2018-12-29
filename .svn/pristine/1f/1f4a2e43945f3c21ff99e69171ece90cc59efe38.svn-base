@@ -1,0 +1,11 @@
+<!-- pages/study-detail/study-detail.wxml -->
+<image src="/images/bannerone.png" class="banner"></image>
+<text class="textTitle">日本大阪旅游景区</text>
+<text class="textDate">2018年12月21日游玩</text>
+<view class="viewText">
+  <text class="textMoney">￥3000.00</text>
+  <view class="textSmall">
+    <text class="textCrestor">12月20日前可定</text>
+    <text class="textOneself">往返自理</text>
+  </view>
+</view>

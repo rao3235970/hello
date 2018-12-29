@@ -1,0 +1,40 @@
+<!-- pages/question-info/question-info.wxml -->
+<view class="question-info">
+    <view class="questioner">
+        <view class="photo">
+            <image src="{{inter.avatar}}" />
+        </view>
+        <view class="right">
+            <view class="name">
+                <view class="nickname" wx:if="{{inter.nickname==''}}">匿名</view>
+                <view class="nickname" wx:else>{{inter.nickname}}</view>
+                <view class="time">发布于{{inter.video_createtime}}</view>
+            </view>
+            <view class="text">{{inter.video_title}}</view>
+            <!-- <video controls='true' show-center-play-btn='true' custom-cache='{{false}}' poster='{{item.video_content}}' />
+            <view class="num">共{{num}}个回答</view>
+            <view class="tag"></view> -->
+        </view>
+        <video controls='true' show-center-play-btn='true' custom-cache='{{false}}' poster='{{item.video_content}}' />
+        <view class="num">共{{num}}个回答</view>
+        <view class="tag"></view>
+    </view>
+    <view class="answer" wx:for="{{comment}}" wx:key="key">
+        <view class="photo">
+            <image src="{{item.avatar}}" />
+        </view>
+        <view class="right">
+            <view class="name">
+                <view class="nickname" wx:if="{{item.nickname==''}}">匿名</view>
+                <view class="nickname" wx:else>{{item.nickname}}</view>
+                <view class="time">{{item.vcomment_createtime}}</view>
+            </view>
+            <view class="text">{{item.vcomment_content}}</view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{comment==''}}">暂无回答！</view>
+    <view class="btn">
+        <navigator hover-class="none" url="/pages/index/index">返回首页</navigator>
+        <navigator hover-class="none" url="/pages/video-comment/video-comment?video_id={{inter.video_id}}&video_title={{inter.video_title}}">我要评论</navigator>
+    </view>
+</view>

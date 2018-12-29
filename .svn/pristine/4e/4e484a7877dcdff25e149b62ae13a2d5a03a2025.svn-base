@@ -1,0 +1,21 @@
+<!-- pages/helpInfo/helpInfo.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="title">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+    </view>
+    <view class="rule">活动规则</view>
+</view>
+<view class="title">
+    <view class="tit">日本签证</view>
+    <view class="price">¥999.00<text>已有100人1元领取</text></view>
+    <view class="now"></view>
+</view>

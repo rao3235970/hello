@@ -1,0 +1,21 @@
+<!-- pages/groupInfo/groupInfo.wxml -->
+<view class="address">
+    <view class="name">收货人：{{groupInfo.contact_name}}</view>
+    <view class="tel">{{groupInfo.contact_phone}}</view>
+    <view class="add">收货地址:{{groupInfo.user_address}}</view>
+</view>
+<view class="orderInfo">
+    <image class="img" src="{{groupInfo.order_thumb}}" />
+    <view class="right">
+        <view class="title">{{groupInfo.order_name}}</view>
+        <view class="price">¥{{groupInfo.price}}</view>
+    </view>
+</view>
+<view class="total">
+    <view class="price">
+        合计：
+        <text>¥{{groupInfo.price}}</text>
+        <!-- <text class="already">已助力388元</text> -->
+    </view>
+    <view class="confirm" bindtap="confirm">确认付款</view>
+</view>

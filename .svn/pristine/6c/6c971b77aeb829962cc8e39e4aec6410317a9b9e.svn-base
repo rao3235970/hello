@@ -1,0 +1,8 @@
+<!--pages/faq/faq.wxml-->
+<view class='answerBox' wx:for="{{answerList}}" wx:key="key">
+  <navigator url='/pages/answer-details/answer-details?answer_id={{item.answer_id}}&status=1' hover-class='none'>
+    <view class='answerTitle'>{{item.answer_title}}</view>
+    <view class='answerTime'>{{item.create_time}}</view>
+    <view class='answerContent'>{{item.answer_content}}</view>
+  </navigator>
+</view>

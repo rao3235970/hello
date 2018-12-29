@@ -1,0 +1,184 @@
+// pages/video/video.js
+const app = getApp()
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    api: app.data.HOST,
+    upimg: true,
+    upvideo: true,
+    img: "",
+    video: ""
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+  upimg: function () {
+    wx.chooseImage({
+      success: function (res) {
+        var tempFilePaths = res.tempFilePaths
+        console.log('chooseImage success, temp path is: ', tempFilePaths[0])
+        wx.uploadFile({
+          url: 'http://www.ieesee.cn',
+          filePath: tempFilePaths[0],
+          name: 'file',
+          formData: {
+            name: tempFilePaths[0],
+            key: "${filename}",
+            policy: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            OSSAccessKeyId: "LTAImrCyM8xjNd7u",
+            success_action_status: "200",
+            signature: "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+          },
+          success: function (res) {
+            console.log('chooseImage success, temp path is: ', tempFilePaths[0])
+            wx.showToast({
+              title: "上传成功",
+              icon: 'success',
+              duration: 1000
+            })
+          },
+          fail: function ({ errMsg }) {
+            console.log('upladImage fail, errMsg is: ', errMsg)
+            wx.showToast({
+              title: "上传失败",
+              duration: 1000
+            })
+          },
+        })
+      }
+    })
+  },
+  videoSubmit: function (e) {//视频
+    var that = this;
+    let user_id = wx.getStorageSync("user_id");
+    let video_title = e.detail.value.video_title;
+    let video_cover = that.data.img;
+    let video_content = that.data.video;
+    if (user_id == "") {
+      wx.showModal({
+        title: '提示',
+        content: '请先授权登录！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+            wx.switchTab({
+              url: '/pages/user/user'
+            })
+          }
+        }
+      })
+    } else if (video_title == "") {
+      wx.showModal({
+        title: '提示',
+        content: '请填写视频标题！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+          }
+        }
+      })
+    } else if (video_cover == "") {
+      wx.showModal({
+        title: '提示',
+        content: '请上传视频封面！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+          }
+        }
+      })
+    } else if (video_content == "") {
+      wx.showModal({
+        title: '提示',
+        content: '请上传视频！',
+        showCancel: false,
+        success: function (res) {
+          if (res.confirm) {
+          }
+        }
+      })
+    } else {
+      wx.request({
+        url: app.data.HOST + 'v1/interadd',
+        header: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        data: { user_id: user_id, video_title: video_title, video_cover: video_cover, video_content: video_content },
+        method: "POST",
+        success: res => {
+          console.log(res.data)
+          if (res.data.status == 200) {
+            wx.showModal({
+              title: '提交成功',
+              content: '您的视频已发布！',
+              showCancel: false,
+              success: function (res) {
+                if (res.confirm) {
+                  wx.navigateTo({
+                    url: '/pages/exchange/exchange'
+                  })
+                }
+              }
+            })
+          }
+        }
+      })
+    }
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
+})

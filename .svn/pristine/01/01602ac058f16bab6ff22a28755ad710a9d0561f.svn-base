@@ -1,0 +1,172 @@
+/**index.wxss**/
+page{
+  display: block;
+  min-height: 100%;
+}
+image{
+  width: 100%;
+  height:auto;
+  border:0;
+  vertical-align:text-bottom;
+}
+.getUserInfo{
+  padding: 200rpx 30rpx; 
+}
+.getUserInfo .tips{
+  display: block;
+  font-size: 35rpx;
+  line-height: 70rpx
+}
+.getUserInfo .tips text{
+  display: block;
+}
+.getUserInfo button{
+  border: none;
+  background: #0084FF;
+  color: #fff;
+  font-size: 40rpx;
+  margin-top: 50rpx
+}
+.swiper image{
+  height: 350rpx;
+}
+.hot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #F2F7FF;
+  padding: 30rpx;
+  margin-bottom: 30rpx
+}
+.hot .hotImg{
+  width: 40rpx;
+  height: 43rpx;
+}
+.hot .swiper_container {
+  width: 90%;
+  height: 43rpx;
+  line-height: 43rpx;
+}
+.hot .swipe swiper{
+  width: 100%;
+  height:350rpx;
+}
+.hot .swiper_item {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+.nav{
+  display: block;
+  margin: 30rpx;
+  overflow: hidden
+}
+.nav navigator{
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin: 20rpx auto;
+}
+.nav navigator image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.nav navigator text{
+  display: block;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+.recom .select_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #999;
+  margin-top: 30rpx;
+  position: relative;
+}
+.recom .li{
+  width: 200rpx;
+  overflow: hidden;
+}
+.recom .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.recom .select_text{
+  font-size: 30rpx;
+  flex: 1;
+}
+.recom .select_img{
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.recom .select_img_rotate{
+  transform:rotate(180deg); 
+}
+.recom .option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 200rpx;
+  border:1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.recom .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+.welfare{
+  padding: 30rpx
+}
+.welfare .title{
+  font-size: 35rpx;
+  font-weight: 600
+}
+.welfare .ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+.welfare .ul navigator{
+  width: 220rpx;
+}
+.recom{
+  padding: 10rpx 30rpx;
+}
+.recom .ul navigator{
+  width: 340rpx;
+  margin: 10rpx 0;
+}
+.recom .ul .tit{
+  font-size: 30rpx;
+  line-height: 50rpx;
+}

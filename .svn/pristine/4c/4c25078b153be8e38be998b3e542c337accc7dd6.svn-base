@@ -1,0 +1,20 @@
+/* pages/resp/resp.wxss */
+.common{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+  font-size: 30rpx;
+}
+.formbtn {
+  width: 70%;
+  font-size: 35rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 120rpx auto;
+  text-align: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 50rpx;
+}

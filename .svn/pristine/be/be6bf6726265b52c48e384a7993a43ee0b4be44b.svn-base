@@ -1,0 +1,10 @@
+<!--pages/activity-details/activity-details.wxml-->
+<!-- <text>pages/activity-details/activity-details.wxml</text> -->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="contain">
+  <view class="viewTitle">{{contentTextUrl.dynamic_title}}</view>
+  <view class="viewDate">{{contentTextUrl.create_time }}</view>
+  <view class="viewContent">        <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+  <image src="{{contentTextUrl.dynamic_img}}" class="imageContent"></image>
+</view>

@@ -1,0 +1,16 @@
+/* pages/about/about.wxss */
+@import "../../wxParse/wxParse.wxss";
+.viewTemplate {
+padding:0 30rpx;
+color:#454545;
+font-size:32rpx;
+
+}
+.templateText {
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 20rpx;
+}

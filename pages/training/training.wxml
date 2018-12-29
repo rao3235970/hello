@@ -1,0 +1,134 @@
+<!--pages/training/training.wxml-->
+<!-- <text>pages/training/training.wxml</text> -->
+<!-- 校园动态和最新开班信息 -->
+<!-- <view class="viewTitle">
+  <navigator hover-class="none" class="activity" url='/pages/school-activity/school-activity'>
+    <image src="{{api}}images/xiaoyuandongtai.png"></image>
+  </navigator>
+  <navigator hover-class="none" class="information" url='/pages/opening-information/opening-information'>
+    <image src="{{api}}images/kaibanxinxi.png"></image>
+  </navigator>
+</view> -->
+
+<view class="welfare recom">
+  <view class="title" bindtap='kaiban'>最新开班信息
+    <image src='{{api}}images/back.png' class='back_title'></image>
+  </view>
+
+  <view class="ul">
+    <navigator  wx:if="{{!tip}}" wx:for="{{contentTitleUrl}}" data-item="{{item}}" url='/pages/information-details/information-details?information_id={{item.information_id}}' style='width:100%;letter-spacing: 2rpx;margin-bottom: 30rpx;padding-bottom: 30rpx;border-bottom:2rpx solid #f2f2f2; font-size: 27rpx;'>
+      <text class="textView">{{item.information_title}}</text>
+    </navigator>
+    <text class='tip' wx:if="{{tip}}">暂无开班信息</text>
+  </view>
+</view>
+
+
+<!-- 资讯 -->
+<view class="hot">
+  <image class="hotImg" mode="widthFix" src="{{api}}images/tongzhi@3x.png" />
+  <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+    <block wx:for="{{textUrl}}" wx:key="{{key}}">
+      <navigator url="/pages/activity-details/activity-details?id={{item.dynamic_id}}" open-type="navigate">
+        <swiper-item>
+          <view class="swiper_item">{{item.dynamic_title}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+</view>
+
+
+
+
+
+
+<!-- 培训中心内部设施 -->
+<view class="welfare recom">
+  <view class="title">{{data.name}}</view>
+  <view class="ul">
+    <!-- url="/pages/training-details/training-details?article_type_id={{item.id}}&article_id={{items.id}}" -->
+    <navigator class="li" hover-class="none" wx:for="{{data.detail_list}}" wx:key="{{item}}" wx:key="{{key}}">
+      <image src="{{item.img}}" class='liImg' />
+      <view class="tit">{{item.title}}</view>
+    </navigator>
+  </view>
+</view>
+<!-- 不单单只是学习日语 -->
+<view class="welfare recom">
+  <view class="title">不单单只是学习日语</view>
+  <view class="ul">
+    <navigator class="li" hover-class="none">
+      <image src="{{api}}images/1.jpg" class='liImgs' />
+      <view class="tits">风土人情</view>
+      <view class="ti">法律法规</view>
+    </navigator>
+    <navigator class="li" hover-class="none">
+      <image src="{{api}}images/2.jpg" class='liImgs' />
+      <view class="tits">日语环境</view>
+       <view class="ti">礼貌礼节</view>
+    </navigator>
+    <navigator class="li" hover-class="none">
+      <image src="{{api}}images/3.jpg" class='liImgs' />
+      <view class="tits">早晚自习</view>
+      <view class="ti">住宿制</view>
+    </navigator>
+    <navigator class="li" hover-class="none">
+      <image src="{{api}}images/4.jpg" class='liImgs' />
+      <view class="tits">全日制</view>
+      <view class="ti">日语培训中心</view>
+    </navigator>
+  </view>
+</view>
+
+<!-- 课程目标 -->
+<view class="dynamic model">
+  <view class="title">课程目标</view>
+  <view class="ul">
+    <view class="li" style='width:48%;margin:0'>
+      <view class='times' style='margin:0'>三个月</view>
+      <view class='times'>四个月</view>
+      <view class='times' style='bottom:0'>六个月</view>
+    </view>
+    <view class="li" style='width:48%;margin-top:0;'>
+      <view class='timed' style='margin:0'>初级N4</view>
+      <view class='timed'>日语N3</view>
+      <view class='timed' style='bottom:0'>日语N2</view>
+    </view>
+
+  </view>
+</view>
+<!-- 在校生动态 -->
+<!-- <view class="welfare recom" wx:for="{{datas}}" wx:key="{{item}}">
+  <view class="title">{{item.name}}</view>
+  <view class="ul">
+   url="/pages/training-details/training-details?article_type_id={{item.id}}&article_id={{items.id}}"
+    <navigator class="li" hover-class="none" wx:for="{{item.detail_list}}" wx:key="{{key}}" wx:for-item="items">
+      <image src="{{items.img}}" class='liImg' />
+      <view class="tit">{{items.title}}</view>
+    </navigator>
+  </view>
+</view> -->
+<!-- 在校生动态 -->
+<view class="welfare recom">
+  <view class="title">{{datas.name}}</view>
+  <view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+      <block wx:for="{{datas.detail_list}}" wx:key="key">
+        <swiper-item>
+          <image src="{{item.img}}" class="slide-image" width="355" height="470" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>
+<!-- 在校生动态 -->
+<!-- <view class="dynamic model">
+  <view class="title">在校生动态</view>
+  <view class="ul">
+    <navigator class="li" url="/pages/training-details/training-details?article_type_id=76&article_id={{item.article_id}}" hover-class="none" wx:for="{{dynamicList}}" data-item="{{item}}" wx:key="{{key}}">
+      <image src="{{item.article_img}}" class='liImg'/>
+      <view class="tit">{{item.article_title}}</view>
+    </navigator>
+  </view>
+</view> -->

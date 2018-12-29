@@ -1,0 +1,9 @@
+<!--pages/workStudy-details/workStudy-details.wxml-->
+<!-- <text>pages/workStudy-details/workStudy-details.wxml</text> -->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class="contain">
+    <view class="viewTitle">{{contentTextUrl.answer_title}}</view>
+    <view class="viewContent">{{contentTextUrl.answer_content}}</view>
+    <view class="viewContent"><template is="wxParse" data="{{wxParseData:article.nodes}}" /></view>
+</view>
+

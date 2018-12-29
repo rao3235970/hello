@@ -1,0 +1,70 @@
+<!--pages/university-details/university-details.wxml-->
+<!-- <text>pages/university-details/university-details.wxml</text> -->
+<!-- 轮播图 -->
+<!-- <view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+<image class="imageView" src="{{imgUrl.school_type_img}}"></image>
+<view class="viewInform">
+  <view class="schoolName">日本名古屋大学</view>
+  <view class="viewText">
+    <view class="viewType">
+      <view class="schoolType">学校类型:专门学校</view>
+      <view class="schoolField">教育领域:工业</view>
+    </view>
+    <view class="viewArea">
+      <view class="schoolArea">所在地区:东京地区</view>
+      <view class="schoolTel">电话:072-271-1388</view>
+    </view>
+  </view>
+  <view class="schoolAddress">地址:大阪市天王寺大阪市天王寺大阪市天王寺大寺大阪市天王寺大寺大阪市天王寺大</view>
+</view>
+<!-- 基本信息 -->
+<view class="basicInform">
+  <view class="basicTitle">基本信息</view>
+  <view class="basicDate">建校时间:1970年</view>
+  <view class="basicScale">中国留学生比例:40%</view>
+  <view class="basicFacility">
+    <view class="viewTitleText">硬件设施:</view>
+    <view class="viewStar">
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+    </view>
+  </view>
+  <view class="basicCondition">
+    <view class="viewTitleText">宿舍条件:</view>
+    <view class="viewStar">
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+    </view>
+  </view>
+  <view class="basicLocation">地理位置:169-0072东京新宿区大久保2-2-9169-0072东京新宿区大久保2-2-9169-0072东京新宿区大久保2-2-9</view>
+</view>
+<!-- 学生关心 -->
+<view class="studentCare">
+  <!-- 标题 -->
+  <view class="studentTitle">学生关心</view>
+  <view class="recruitContent">
+    具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考
+  </view>
+</view>
+<!-- 学生反馈 -->
+<view class="studentCare">
+  <!-- 标题 -->
+  <view class="studentTitle">学生反馈</view>
+  <view class="recruitContent">
+    具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考分数400分以上中专生日N2以上具有12年以上学历，身心健康，遵守法律者高中生高考
+  </view>
+</view>

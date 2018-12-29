@@ -1,0 +1,9 @@
+//app.js
+App({
+  data: {
+    HOST: "http://dispatch.yuxwl.top/",
+  },
+  onLaunch: function () {
+   
+  }
+})

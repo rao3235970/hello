@@ -1,0 +1,6 @@
+<!--pages/work-study/work-study.wxml-->
+<!-- <text>pages/work-study/work-study.wxml</text> -->
+<view class="contain">
+  <view class="viewTitle">{{contentTextUrl.answer_title}}</view>
+  <view class="viewContent">{{contentTextUrl.answer_content}}</view>
+</view>

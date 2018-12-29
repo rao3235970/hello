@@ -1,0 +1,89 @@
+/* pages/user/user.wxss */
+page {
+    display: block;
+    background: #f6f6f6;
+}
+.getUserInfo{
+    padding: 200rpx 30rpx; 
+}
+.getUserInfo .tips{
+    display: block;
+    font-size: 35rpx;
+    line-height: 70rpx
+}
+.getUserInfo .tips text{
+    display: block;
+}
+.getUserInfo button{
+    border: none;
+    background: #0084FF;
+    color: #fff;
+    font-size: 40rpx;
+    margin-top: 50rpx
+}
+.userinfo .photo{
+    display: block;
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #E5E5E5;
+    margin-bottom: 23rpx;
+    overflow: hidden;
+}
+.userinfo .photo navigator{
+    position: absolute;
+    top: 30rpx;
+    right: 30rpx;
+    font-size: 35rpx;
+    color: #fff;
+}
+.userinfo .photo .pic{
+    display: block;
+    float: left;
+    width: 120rpx;
+    height: 120rpx;
+    border: 1px solid #fff;
+    border-radius: 100rpx;
+    margin: 50rpx 30rpx;
+    overflow: hidden
+}
+.userinfo .photo .pic image{
+    width: 120rpx;
+    height: 120rpx;
+}
+.userinfo .photo .name{
+    display: block;
+    float: left;
+    width: 200rpx;
+    color: #0F1D37;
+    margin-top: 90rpx
+}
+.userinfo .list{
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.userinfo .list:last-child{
+    margin-bottom:0
+}
+.userinfo .list .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 35rpx;
+    line-height: 70rpx;
+    padding: 28rpx 30rpx 28rpx 50rpx; 
+    border-bottom: 1px solid #E5E5EA;
+}
+.userinfo .list .item:last-child{
+    border-bottom: none;
+}
+.userinfo .list .item .icon{
+    width: 42rpx;
+}
+.userinfo .list .item navigator{
+    width: 550rpx;
+    font-size: 32rpx
+}
+.userinfo .list .item .arrow{
+    width: 20rpx;
+}

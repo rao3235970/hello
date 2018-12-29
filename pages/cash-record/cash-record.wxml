@@ -1,0 +1,10 @@
+<!--pages/cash-record/cash-record.wxml-->
+<view class='cash'>
+  <view class='list' wx:for="{{data}}" wx:if="{{data.length}}" data-item="{{item}}">
+    <view class='integral_record'>积分提现</view>
+    <view class='time'>{{item.createtime}}</view>
+    <view class='integral'>{{item.score}}</view>
+  </view>
+</view>
+
+<text wx:if="{{zan}}" class='isNull'>暂无记录</text>

@@ -1,0 +1,4 @@
+/* pages/video-details/video-details.wxss */
+.container {
+  padding: 40rpx 20rpx;
+}

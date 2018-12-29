@@ -1,0 +1,148 @@
+<!-- pages/group/group.wxml -->
+<!-- 广告轮播 -->
+<import src="../../wxParse/wxParse.wxml"/>
+
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{imgUrls[index]}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="title">
+    <view class="money">
+        <text>¥{{list.price}}</text>
+        <text>¥{{list.real_price}}</text>
+        <text>已拼{{list.num}}人</text>
+    </view>
+    <view class="tit">{{list.g_name}}</view>
+</view>
+<!-- 拼团 -->
+<view class="group" wx:if="{{orderList!=''}}">
+    <view class="more">
+        <text>{{orderList.length}}人正在拼单</text>
+        <navigator class="nav" url='pages/comment-list/comment-list?id="12"' hover-class="none" bindtap="groupList" wx:if="{{orderList.length>1}}">
+            查看更多
+            <image src="{{api}}images/my_gd@2x.png" />
+        </navigator>
+    </view>
+    <view class="li" >
+        <image class="photo" src="{{orderList[0].thumb}}" />
+        <view class="name">{{orderList[0].name}}</view>
+        <view class="msg">
+            <view>
+                还差
+                <text>{{orderList[0].neednum - orderList[0].is_num}}人</text>
+                拼成
+            </view>
+            <view>剩余{{countDownList[0].date.day}}天{{countDownList[0].date.hou}}:{{countDownList[0].date.min}}:{{countDownList[0].date.sec}}</view>
+        </view>
+        <button class="group-btn" data-type="2" data-index="{{countDownList[0].og_id}}"  bindtap="order2" disabled='{{userid==countDownList[0].user_id?true:false}}' style='background:{{userid==countDownList[0].user_id?"#ccc":"#FF135B"}}'>
+            去参团
+        </button>
+    </view>
+</view>
+
+<!-- 详情 -->
+<view class="info">
+    <view class="more">
+        <text>商品详情</text>
+    </view>
+    <view class="text">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+            
+
+</view>
+<!-- 评价 -->
+<view class="evaluate">
+    <view class="more">
+        <text>用户评价</text>
+        <navigator class="nav" url='/pages/comment-list/comment-list' hover-class="none" wx:if="{{comment.length>=2}}">
+            查看更多
+            <image src="{{api}}images/gengduo@2x.png" />
+        </navigator>
+    </view>
+    <view class="li" wx:for="{{comment}}">
+        <view class="ev-title">
+            <image class="photo" src="{{item.thumb}}" />
+            <view class="name">{{item.name}}</view>
+            <view class="time">{{item.createtime}}</view>
+        </view>
+        <view class="text">{{item.content}}</view>
+    </view>
+    <view class="li" wx:if="{{comment.length==0}}">
+        <text class='isC'>暂无评价</text>
+    </view>
+</view>
+<!-- <view class="introduction">
+    <view class="more">
+        <text>商品介绍</text>
+    </view>
+    <view class="text">
+        {{list.content}}
+    </view>
+</view> -->
+<!-- 正在拼单列表弹窗 -->
+<view class="list" catchtouchmove="ture" wx:if="{{now}}">
+    <view class="now">
+        <view class="tit">正在拼单</view>
+        <scroll-view scroll-y="{{true}}" class="ul">
+            <view class="li" wx:for="{{orderList}}" wx:key="countDownList" wx:for-index='idx'>
+                <image class="photo" src="{{item.thumb}}" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>{{item.name}}</text>
+                        还差{{item.neednum-item.is_num}}人
+                    </view>
+                    <view>剩余{{countDownList[idx].date.day}}天{{countDownList[idx].date.hou}}:{{countDownList[idx].date.min}}:{{countDownList[idx].date.sec}}</view>
+                </view>
+                <button class="group-btn" data-type="2" data-index="{{item.og_id}}" bindtap="order2" disabled='{{userid==item.user_id?true:false}}' style='background:{{userid==item.user_id?"#ccc":"#FF135B"}}'>
+                    去参团
+                </button>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="close" bindtap="close">
+        <image src="{{api}}images/guanbi@2x.png" />
+    </view>
+</view>
+<!-- 参与拼单列表弹窗 -->
+<view class="list" catchtouchmove="ture" wx:if="{{join}}">
+    <view class="join">
+        <view class="name">参与小脑斧的拼单</view>
+        <view class="tips">仅剩20个名额，23:00:00后结束</view>
+        <view class="ul">
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+            </view>
+        </view>
+        <button class="group-btn">参与拼单</button>
+    </view>
+    <view class="close" bindtap="close">
+        <image src="{{api}}images/guanbi@2x.png" />
+    </view>
+</view>
+<view class="bgn" wx:if="{{bgn}}"></view>
+<!-- 底部footer -->
+<view class='parent'>
+
+<view class='exechage'></view>
+<view class="footer">
+    <view class="service" bindtap="callPhone">
+        <image src="{{api}}images/kefu@2x.png" />
+        <text>客服</text>
+    </view>
+    <view class="btn alone" data-type="4" data-index="{{list.g_id}}" bindtap="order">
+        <text>¥{{list.real_price}}</text>
+        <text>单独购买</text>
+    </view>
+    <view class="btn initiate" data-type="2" data-index="{{list.g_id}}" bindtap="order">
+        <text>¥{{list.price}}</text>
+        <text>发起拼团</text>
+    </view>
+</view>
+</view>

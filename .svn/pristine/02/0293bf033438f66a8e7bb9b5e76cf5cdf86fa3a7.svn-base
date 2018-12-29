@@ -1,0 +1,59 @@
+<!-- pages/help/help.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{imgUrls[index]}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="title">
+    <view class="money">
+        <text>¥{{list.p_price}}</text>
+        <text>价值¥{{list.p_realprice}}</text>
+        <text>需要{{list.p_total}}人助力</text>
+    </view>
+    <view class="tit">
+        {{list.p_name}}
+        <text>已有{{info.num}}人1元领证</text>
+    </view>
+</view>
+<!-- 助力晒单 -->
+<view class="evaluate">
+    <view class="more">
+        <text>助力晒单</text>
+        <navigator class="nav" hover-class="none">
+            查看更多
+            <image src="{{api}}images/my_gd.png" />
+        </navigator>
+    </view>
+    <view class="li" wx:for="{{comment}}">
+        <view class="ev-title">
+            <image class="photo" src="{{item.avatar}}" />
+            <view class="name">{{item.nickname}}</view>
+            <view class="time">{{item.createtime}}</view>
+        </view>
+        <view class="text">{{item.content}}</view>
+    </view>
+</view>
+<!-- 详情 -->
+<view class="info">
+    <view class="more">
+        <text>商品详情</text>
+    </view>
+    <view class="text">
+        {{list.p_descript}}
+    </view>
+</view>
+<!-- 底部footer -->
+<view class="footer">
+    <view class="service">
+        <image src="{{api}}images/kefu@2x.png" />
+        <text>客服</text>
+    </view>
+    <view class="btn" bindtap="confirm">
+        <text>1元领取</text>
+    </view>
+</view>

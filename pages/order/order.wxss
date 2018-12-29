@@ -1,0 +1,130 @@
+/* pages/order/order.wxss */
+page{
+    display: block;
+    background: #F6F6F6;
+}
+image{
+    width: 100%;
+    height:100%;
+}
+
+.tabNav .nav{
+    width:100%;
+    height:100rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-top: 1px solid #E5E5EA;
+    font-size: 32rpx;
+    margin-bottom: 23rpx;
+}
+.tabNav .nav .tab{
+    line-height:100rpx;
+    text-align:center;
+    flex:1;
+    color:#333;
+    font-weight:bold;
+}
+.tabNav .nav .active{
+    line-height:100rpx;
+    text-align:center;
+    color:#0084FF;
+    flex:1;
+    font-weight:bold;
+    border-bottom: 1px solid #0084FF
+}
+.tabNav .nav .show{
+    display:block;
+}
+.tabNav .nav .hidden{
+    display:none;
+}
+.list .li{
+    background: #fff;
+    padding: 30rpx;
+    margin-bottom: 23rpx;
+    overflow: hidden;
+}
+.list .li .images{
+    display: block;
+    float: left;
+    width: 120rpx;
+    height: 120rpx;
+    position: relative;
+    overflow: hidden;
+}
+.list .li .right{
+    display: block;
+    float: left;
+    width: 500rpx;
+    margin-left: 40rpx;
+    overflow: hidden;
+}
+.list .li .right .tit{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #454545;
+    margin-top: 20rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.list .li .pay{
+    width: 100%;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    padding: 20rpx 0;
+    border-bottom: 1px solid #E5E5E5;
+    overflow: hidden;
+}
+.list .li .pay .total{
+    float: left;
+}
+.list .li .pay .peice{
+    float: right;
+}
+.list .li .pay .peice text{
+    font-size: 35rpx;
+}
+.list .li .tag{
+    font-size: 25rpx;
+    color: #2F71F6;
+    line-height: 50rpx;
+    padding-top: 20rpx;
+    overflow: hidden;
+}
+.list .li .tag .text{
+    float: left;
+}
+.list .li .tag .com{
+    color: #999
+}
+.list .li .tag .status{
+    width: 120rpx;
+    height: 50rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    border:1px solid #2F71F6;
+    float: right;
+}
+.list .li .tag .statusq{
+    width: 120rpx;
+    height: 50rpx;
+    text-align: center;
+    border-radius: 30rpx;
+    border:1px solid #2F71F6;
+    float: right;
+    margin-right: 10rpx;
+}
+.list .li .tag navigator{
+    border:1px solid #999 !important;
+    color: #999
+}
+.list .tips{
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 100rpx;
+}

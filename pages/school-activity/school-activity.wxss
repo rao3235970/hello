@@ -1,0 +1,38 @@
+/* pages/school-activity/school-activity.wxss */
+.activityUl {
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+}
+/* 缩略图 */
+.activityUl image {
+  width: 240rpx;
+  height: 180rpx;
+  display: block;
+  float: left;
+}
+.viewText {
+  float: left;
+  margin-left: 32rpx;
+  margin-top: 6rpx;
+}
+/* 文字 */
+.viewContent {
+  width: 426rpx;
+  height: 88rpx;
+  display: -webkit-box;     
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-size: 32rpx;
+  color: #333333;
+  font-weight: 700;
+  line-height: 48rpx;
+}
+/* 时间 */
+.viewDate {
+  font-size: 28rpx;
+  color: #808080;
+  margin-top: 30rpx;
+}

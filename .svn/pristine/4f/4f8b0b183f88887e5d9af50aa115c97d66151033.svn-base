@@ -1,0 +1,38 @@
+<!-- pages/order/order.wxml -->
+<view class="tabNav">
+    <view class="nav">
+        <view class="tab {{all?'active':''}}" bindtap="all">
+            <text>全部订单</text>
+        </view>
+        <view class="tab {{pay?'active':''}}" bindtap="pay">
+            <text>待付款</text>
+        </view>
+        <view class="tab {{com?'active':''}}" bindtap="com">
+            <text>已完成</text>
+        </view>
+        <view class="tab {{ord?'active':''}}" bindtap="ord">
+            <text>退款单</text>
+        </view>
+    </view>
+    <view class="list">
+        <view class="li" wx:for="{{orderList}}" wx:key="key">
+            <view class="images">
+                <image src="{{api}}images/card-3copy@3x.png" data-src="{{item.order_thumb}}" bindtap="previewImage" />
+            </view>
+            <view class="right">
+                <view class="tit">{{item.order_name}}</view>
+            </view>
+            <view class="pay">
+                <view class="total">共1件商品</view>
+                <view class="peice">实付款：¥<text>99.00</text></view>
+            </view>
+            <view class="tag">
+                <view class="text" wx:if="{{item.status==1}}">等待支付</view>
+                <view class="text com" wx:if="{{item.status==3&&item.is_comment==1}}">已完成</view>
+                <view class="status" wx:if="{{item.status==1}}" data-index="{{item.orderno}}" bindtap="confirm">去支付</view> 
+                <navigator class="status" url="/pages/eval/eval?goods_id={{item.goods_id}}&order_id={{item.order_id}}&type={{item.type}}" hover-class="none"  wx:if="{{item.status==3&&item.is_comment==1}}">去评价</navigator>
+            </view>
+        </view>
+        <view class="tips" wx:if="{{orderList.length==0}}">暂无数据！</view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+/* pages/about/about.wxss */
+@import "../../wxParse/wxParse.wxss";
+.viewTemplate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 26rpx;
+  padding: 40rpx 30rpx;
+}
+.templateText {
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 20rpx;
+}

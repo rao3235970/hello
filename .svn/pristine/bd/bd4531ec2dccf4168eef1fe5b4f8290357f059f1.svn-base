@@ -1,0 +1,13 @@
+<!--pages/news/news.wxml-->
+<view class='List'>
+  <view class='Li' wx:for="{{newsList}}" wx:key="key">
+    <navigator url='/pages/info/info?question_id={{item.question_id}}' hover-class='none'>
+      <view class='ListRight'>
+        <view class='Title'>{{item.question_title}}</view>
+        <!-- <view class='content'>{{item.question_type}}</view> -->
+        <view class='Time'>{{item.create_time}}</view>
+      </view>
+    </navigator>
+  </view>
+  <view class="tips" wx:if="{{newsList.length==0}}">暂无数据！</view>
+</view>

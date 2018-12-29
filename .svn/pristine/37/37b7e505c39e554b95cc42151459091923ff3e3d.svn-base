@@ -1,0 +1,28 @@
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid #ECECEC;
+  height: 152rpx;
+}
+.name_phone text:nth-of-type(1){
+  font-size:32rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(15,29,55,1);
+  display: block;
+}
+.name_phone text:nth-of-type(2){
+  font-size:28rpx;
+  font-family:PingFang-SC-Regular;
+  font-weight:400;
+  color:rgba(15,29,55,1);
+}
+.state{
+  display: block;
+  font-size:32rpx;
+font-family:PingFang-SC-Medium;
+font-weight:500;
+color:rgba(15,29,55,1);
+}

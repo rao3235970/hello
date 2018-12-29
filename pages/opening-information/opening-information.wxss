@@ -1,0 +1,23 @@
+/* pages/opening-information/opening-information.wxss */
+page {
+  background-color: #F6F6F6;
+}
+.infoUl {
+  margin: 0rpx;
+  border-bottom: 20rpx solid #F6F6F6;
+  width: 92%;
+  height: 120rpx;
+  line-height: 120rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+  background-color: #ffffff;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

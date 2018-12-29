@@ -1,0 +1,203 @@
+<!-- pages/group/group.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="title">
+    <view class="money">
+        <text>¥99.9</text>
+        <text>¥399</text>
+        <text>已拼10人</text>
+    </view>
+    <view class="tit">日本签证</view>
+</view>
+<!-- 拼团 -->
+<view class="group">
+    <view class="more">
+        <text>4人正在拼单</text>
+        <navigator class="nav" hover-class="none">
+            查看更多
+            <image src="{{api}}images/gengduo@2x.png" />
+        </navigator>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="msg">
+            <view>
+                还差
+                <text>20人</text>
+                拼成
+            </view>
+            <view>剩余20:30:25</view>
+        </view>
+        <button class="group-btn">去拼单</button>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧小脑斧小脑斧</view>
+        <view class="msg">
+            <view>
+                还差
+                <text>20人</text>
+                拼成
+            </view>
+            <view>剩余20:30:25</view>
+        </view>
+        <button class="group-btn">去拼单</button>
+    </view>
+</view>
+<!-- 评价 -->
+<view class="evaluate">
+    <view class="more">
+        <text>用户评价</text>
+        <navigator class="nav" hover-class="none">
+            查看更多
+            <image src="{{api}}images/gengduo@2x.png" />
+        </navigator>
+    </view>
+    <view class="li">
+        <view class="ev-title">
+            <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+            <view class="name">小脑斧</view>
+            <view class="time">2018-10-23</view>
+        </view>
+        <view class="text">下面我谈谈在家庭中我是如何培养教育孩子，如何容在思想品德方面,我经常告戒她要讲文明懂讲文明.</view>
+    </view>
+    <view class="li">
+        <view class="ev-title">
+            <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+            <view class="name">小脑斧</view>
+            <view class="time">2018-10-23</view>
+        </view>
+        <view class="text">下面我谈谈在家庭中我是如何培养教育孩子，如何容在思想品德方面,我经常告戒她要讲文明懂讲文明.</view>
+    </view>
+</view>
+<!-- 详情 -->
+<view class="info">
+    <view class="more">
+        <text>商品详情</text>
+    </view>
+    <view class="text">
+        下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如
+    </view>
+</view>
+<view class="introduction">
+    <view class="more">
+        <text>商品介绍</text>
+    </view>
+    <view class="text">
+        下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如
+    </view>
+</view>
+<!-- 正在拼单列表弹窗 -->
+<view class="list" catchtouchmove="ture" wx:if="{{now}}">
+    <view class="now">
+        <view class="tit">正在拼单</view>
+        <scroll-view scroll-y="{{true}}" class="ul">
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>小脑斧小脑斧小脑斧</text>
+                        还差20人
+                    </view>
+                    <view>剩余20:30:25</view>
+                </view>
+                <button class="group-btn">去拼单</button>
+            </view>
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>小脑斧小脑斧小脑斧</text>
+                        还差20人
+                    </view>
+                    <view>剩余20:30:25</view>
+                </view>
+                <button class="group-btn">去拼单</button>
+            </view>
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>小脑斧小脑斧小脑斧</text>
+                        还差20人
+                    </view>
+                    <view>剩余20:30:25</view>
+                </view>
+                <button class="group-btn">去拼单</button>
+            </view>
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>小脑斧小脑斧小脑斧</text>
+                        还差20人
+                    </view>
+                    <view>剩余20:30:25</view>
+                </view>
+                <button class="group-btn">去拼单</button>
+            </view>
+            <view class="li">
+                <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+                <!-- <view class="name">小脑斧小脑斧小脑斧</view> -->
+                <view class="msg">
+                    <view>
+                        <text>小脑斧小脑斧小脑斧</text>
+                        还差20人
+                    </view>
+                    <view>剩余20:30:25</view>
+                </view>
+                <button class="group-btn">去拼单</button>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="close" bindtap="close">
+        <image src="{{api}}images/guanbi@2x.png" />
+    </view>
+</view>
+<!-- 参与拼单列表弹窗 -->
+<view class="list" catchtouchmove="ture" wx:if="{{join}}">
+    <view class="join">
+        <view class="name">参与小脑斧的拼单</view>
+        <view class="tips">仅剩20个名额，23:00:00后结束</view>
+        <view class="ul">
+            <view class="li"><image class="photo" src="{{api}}images/card-3copy@3x.png" /></view>
+        </view>
+        <button class="group-btn">参与拼单</button>
+    </view>
+    <view class="close" bindtap="close">
+        <image src="{{api}}images/guanbi@2x.png" />
+    </view>
+</view>
+<view class="bgn" wx:if="{{bgn}}"></view>
+<!-- 底部footer -->
+<view class="footer">
+    <view class="service">
+        <image src="{{api}}images/star@2x.png" />
+        <text>收藏</text>
+    </view>
+    <view class="service">
+        <image src="{{api}}images/kefu@2x.png" />
+        <text>客服</text>
+    </view>
+    <view class="btn alone">
+        <text>¥399</text>
+        <text>单独购买</text>
+    </view>
+    <view class="btn initiate">
+        <text>¥99</text>
+        <text>发起拼团</text>
+    </view>
+</view>

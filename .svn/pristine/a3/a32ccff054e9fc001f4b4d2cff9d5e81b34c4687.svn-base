@@ -1,0 +1,36 @@
+<!-- pages/study-detail/study-detail.wxml -->
+<image src="/images/bannerone.png" class="banner"></image>
+<text class="textTitle">日本大阪旅游景区</text>
+<text class="textDate">2018年12月21日游玩</text>
+<view class="viewSmall">
+  <view class="viewText">
+    <text class="textMoney">￥3000.00</text>
+    <view class="textSmall">
+      <text class="textCrestor">12月20日前可定</text>
+      <text class="textOneself">往返自理</text>
+    </view>
+  </view>
+  <!-- 加减input框 -->
+  <view class='stepper'>
+    <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+    <input bindinput='bindManual' value='{{num}}'></input>
+    <text bindtap='bindPlus'>+</text>
+  </view>
+</view>
+<view class="wideLineFirst"></view>
+<view class="viewDiscuss">
+  <text class="textDiscuss">评论(99+)</text>
+  <text class="textMore">查看更多</text>
+  <image src="{{api}}images/titlebackcopy15@3x.png" class="imageMore"></image>
+</view>
+<view class="wideLineSecond"></view>
+<view class="content">
+  <text class="contentTitle">行程介绍</text>
+  <view class="thinLine"></view>
+  <view class="contentText">
+  </view>
+  <view class="contentAddress">
+  <text>地址:日本大阪</text>
+  <text>出行路线:乘坐1号地铁-转2号公交-转250公交-下车,步行1234米左转到达</text>
+  </view>
+</view>

@@ -1,0 +1,142 @@
+.left_integral {
+  text-align: center;
+}
+
+.right_integral {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  color: #fff;
+}
+
+.freezing_integral {
+  font-size: 25rpx;
+  color: #fff;
+  display: block;
+  padding-right: 30rpx;
+}
+
+.tixian {
+  font-size: 25rpx;
+  color: #fff;
+  display: block;
+  padding-left: 30rpx;
+}
+
+.head {
+  width: 100%;
+  height: 322rpx;
+  padding-top: 10rpx;
+  position: relative;
+}
+
+.head image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.integral-exchange {
+  font-size: 28rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  text-align: right;
+  display: block;
+  margin: 0 30rpx 0 0;
+  opacity: 0.7;
+}
+
+.Total {
+  font-size: 38rpx;
+  color: #fff;
+  display: block;
+  margin-top: 28rpx;
+  /* height:80rpx;
+line-height:60px; */
+}
+
+.integral {
+  font-size: 72rpx;
+  font-family: PingFang-SC-Bold;
+  color: rgba(255, 255, 255, 1);
+  display: block;
+  margin-top: 30rpx;
+  /* height:110rpx;
+line-height:110rpx; */
+}
+
+.list {
+  padding: 0 30rpx;
+}
+
+.item {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+  /* height: 115rpx; */
+  padding-top: 35rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom:35rpx;
+
+}
+
+.item .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top .left {
+  font-size: 32rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(15, 29, 55, 1);
+}
+
+.top .state {
+  font-size: 22rpx;
+  font-family: PingFang-SC-Regular;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  margin-left: 20rpx;
+}
+
+.top .right {
+  font-size: 34rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(47, 113, 246, 1);
+}
+
+.time {
+  font-size: 22rpx;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  color: rgba(153, 153, 153, 1);
+  margin-top: 5rpx;
+}
+
+.tab {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+}
+
+.tab text {
+  display: block;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.tab text.active {
+  background: #2f71f6;
+}

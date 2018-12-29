@@ -1,0 +1,61 @@
+<!--pages/special-school/special-school.wxml-->
+<!-- 搜索框 -->
+<view class='searchBox'>
+  <image src="{{api}}images/searchcopy@2x.png"></image>
+  <!-- <icon type='search' size='13'></icon> -->
+  <input type='text' class='searchSchoolName' placeholder='输入该学校名字'></input>
+</view>
+<!-- 下拉框 -->
+<view class='selectBox recom'>
+  <view class='select_box'>
+    <view class="li">
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{show}}" style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li">
+      <view class='select' catchtap='selectTapa'>
+        <text class='select_text'>{{selecta[indexa]}}</text>
+        <image class='select_img {{showa&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showa}}" style='height:{{showa?(selecta.length>5?300:selecta.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selecta.length-1&&"border:0;"}}' wx:for='{{selecta}}' wx:key='this' data-index='{{index}}' catchtap='optionTapa'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li">
+      <view class='select' catchtap='selectTapb'>
+        <text class='select_text'>{{selectb[indexb]}}</text>
+        <image class='select_img {{showb&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showb}}" style='height:{{showb?(selectb.length>5?300:selectb.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectb.length-1&&"border:0;"}}' wx:for='{{selectb}}' wx:key='this' data-index='{{index}}' catchtap='optionTapb'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li">
+      <view class='select' catchtap='selectTapc'>
+        <text class='select_text'>{{selectc[indexc]}}</text>
+        <image class='select_img {{showc&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showc}}" style='height:{{showc?(selectc.length>5?300:selectc.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectc.length-1&&"border:0;"}}' wx:for='{{selectc}}' wx:key='this' data-index='{{index}}' catchtap='optionTapc'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 学校搜索结果 -->
+<view class='schoolResult'>
+  <text class='schoolTitle'>日明谷物大学</text>
+  <image class='schoolImage'></image>
+</view>

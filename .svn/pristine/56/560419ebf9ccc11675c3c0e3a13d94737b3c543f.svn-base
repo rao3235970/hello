@@ -1,0 +1,17 @@
+<!-- pages/video/video.wxml -->
+<form class="video" bindsubmit="videoSubmit">
+    <textarea name="video_title" placeholder="您的视频标题！" bindinput="inputs" placeholder-style="color:#C0C0C0;font-size:30rpx" />
+    <view class="upload">
+        <view class="upimg" bindtap="upimg">
+            <view class="title">上传视频封面</view>
+            <image wx:if="{{upimg}}" src="{{api}}images/fabu_add@3x.png"></image>
+            <image wx:else src="{{img}}"></image>
+        </view>
+        <view class="upvideo" bindtap="upvideo">
+            <view class="title">上传视频</view>
+            <image wx:if="{{upvideo}}" src="{{api}}images/fabu_add@3x.png"></image>
+            <video wx:else src="{{video}}" />
+        </view>
+    </view>
+    <button class="btn" formType="submit">发布</button>
+</form>

@@ -1,0 +1,29 @@
+<!-- pages/groupInfo/groupInfo.wxml -->
+<!-- <view class="address">
+    <view class="name" wx:if="{{groupInfo.contact_name!=null}}">收货人：{{groupInfo.contact_name}}</view>
+    <view class="tel" wx:if="{{groupInfo.contact_phone!=null}}">{{groupInfo.contact_phone}}</view>
+    <view class="add" wx:if="{{groupInfo.user_address!=null}}">收货地址:{{groupInfo.user_address}}</view>
+</view> -->
+<view class="orderInfo">
+    <image class="img" src="{{groupInfo.order_thumb}}" />
+    <view class="right">
+        <view class="title">{{groupInfo.order_name}}</view>
+        <view class="price">¥{{groupInfo.price}}</view>
+    </view>
+</view>
+<view class="total">
+    <view class="price">
+        合计：
+        <text>¥{{groupInfo.price}}</text>
+        <!-- <text class="already">已助力388元</text> -->
+    </view>
+    <view class="confirm" bindtap="confirm">确认付款</view>
+</view>
+<view class="share" wx:if="{{share}}">
+    <view class="tit">分享给好友</view>  
+    <button open-type="share">
+        <image src="{{api}}images/wx@2x.png" />
+        <text class="text">转发给好友</text>
+    </button>
+</view>
+<view class="bgn" wx:if="{{bgn}}"></view>

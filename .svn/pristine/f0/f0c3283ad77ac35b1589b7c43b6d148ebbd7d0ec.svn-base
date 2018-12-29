@@ -1,0 +1,76 @@
+<!--pages/training/training.wxml-->
+<!-- <text>pages/training/training.wxml</text> -->
+<!-- 校园动态和最新开班信息 -->
+<view class="viewTitle">
+  <navigator hover-class="none" class="activity" url='/pages/school-activity/school-activity'>
+    <image src="{{api}}images/xiaoyuandongtai.png"></image>
+  </navigator>
+  <navigator hover-class="none" class="information" url='/pages/opening-information/opening-information'>
+    <image src="{{api}}images/kaibanxinxi.png"></image>
+  </navigator>
+</view>
+<!-- 培训中心 -->
+<!-- <view class="trainingCenter">
+  <text class="textTitle">培训中心内部设施</text>
+  <view class="ul">
+    <navigator hover-class="none" class="li">
+      <image src="{{api}}images/shengxue@3x.png" mode="widthFix"></image>
+    </navigator>
+    <navigator hover-class="none" class="li">
+      <image src="{{api}}images/meishu@3x.png" mode="widthFix"></image>
+    </navigator>
+    <navigator hover-class="none" class="li"></navigator>
+    <navigator hover-class="none" class="li"></navigator>
+  </view>
+</view> -->
+<view class="welfare recom">
+  <view class="title">培训中心内部设施</view>
+  <view class="ul">
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/shengxue@3x.png" />
+      <view class="tit">{{data[0].article_title}}</view>
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/meishu@3x.png" />
+      <view class="tit">{{data[1].article_title}}</view>
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guimo@3x.png" />
+      <view class="tit">{{data[2].article_title}}</view>
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guoji@3x.png" />
+      <view class="tit">{{data[3].article_title}}</view>
+    </navigator>
+  </view>
+</view>
+<!-- 在校生动态 -->
+<view class="dynamic model">
+  <view class="title">在校生动态</view>
+  <view class="ul">
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/shengxue@3x.png" />
+      <!-- <view class="tit">培训中心外观</view> -->
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/meishu@3x.png" />
+      <!-- <view class="tit">培训中心走廊</view> -->
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guimo@3x.png" />
+      <!-- <view class="tit">培训中心教室</view> -->
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guoji@3x.png" />
+      <!-- <view class="tit">多媒体教室</view> -->
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guoji@3x.png" />
+      <!-- <view class="tit">多媒体教室</view> -->
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guoji@3x.png" />
+      <!-- <view class="tit">多媒体教室</view> -->
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,96 @@
+/* pages/news/news.wxss */
+
+page {
+  display: block;
+  background: #f6f6f6;
+}
+
+.List {
+  margin-top: 2rpx;
+  background: #fff;
+}
+
+.Li {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 140rpx;
+  padding-top: 40rpx;
+  padding-left: 40rpx;
+  /* border-bottom: 2rpx solid #e5e5e5; */
+}
+
+.ListLeft {
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  /* margin-bottom: 50rpx; */
+}
+
+.ListRight .Title {
+  padding-top: 8rpx;
+  font-size: 34rpx;
+  color: #454545;
+  letter-spacing: 0;
+  line-height: 34rpx;
+  width: 690rpx;
+  height: 34rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ListRight .Time {
+  font-size: 28rpx;
+  color: #808080;
+  letter-spacing: 0;
+  width: 160rpx;
+  float: left;
+  height: 33rpx;
+  /* text-align: right; */
+  margin-top: 28rpx;
+  margin-left: 10rpx;
+}
+
+.ListRight .content {
+  font-size: 28rpx;
+  color: #808080;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  /* padding-top: 9rpx; */
+  margin-top: 30rpx;
+  width: 90rpx;
+  height: 32rpx;
+  float: left;
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+}
+
+.ListRight {
+  /* float: right; */
+  width: 660rpx;
+  height: 138rpx;
+  /* line-height: 138rpx; */
+  padding-right: 70rpx;
+  margin-bottom: 2rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+.tips {
+  font-size: 35rpx;
+  text-align: center;
+  margin-top: 200rpx;
+  background: #f6f6f6;
+}
+
+.loading{
+  padding: 10rpx;
+  text-align: center;
+}
+
+.loading.complete:before{
+  display: none;
+}

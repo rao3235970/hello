@@ -1,0 +1,25 @@
+<!-- pages/exchange/exchange.wxml -->
+<view class="tabNav">
+
+  <!--问答专区-->
+  <!--视频专区-->
+  <view class="video {{not?'show':'hidden'}}">
+    <view class="li" wx:for="{{data}}" wx:key="key">
+      <navigator class="video" hover-class="none" url="/pages/on_lineInfo/index?online_id={{item.online_id}}">
+        <image class="videoImg" src="{{item.online_cover}}" />
+        <image class="play" src="{{api}}images/shipin_bofang@2x.png" />
+      </navigator>
+      <view class="tag">
+        <view class="title">{{item.online_descript}}</view>
+        <!-- <navigator class="msg" hover-class="none" url="">
+          <image class="msgImg" src="{{api}}images/jiaoliu_pinglun@2x.png" />
+          <text>{{item.msgnum}}</text>
+        </navigator> -->
+      </view>
+    </view>
+    <!-- <navigator class="add" hover-class="none" url="/pages/video/video">
+      <image src="{{api}}images/jiaoliu_tiwen@2x.png" />
+    </navigator> -->
+    <view class="tips" wx:if="{{data.length==0}}">暂无数据</view>
+  </view>
+</view>

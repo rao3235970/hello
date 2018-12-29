@@ -1,0 +1,196 @@
+/* pages/university/university.wxss */
+/* page {
+  background-color: #F5F5F5;
+} */
+/* 搜索框 */
+text view image {
+  margin: 0rpx;
+  padding: 0rpx;
+}
+/*
+通长的搜索框
+ .searcher {
+  width: 100%;
+  height: 76rpx;
+  background-color: #f5f5f5;
+}
+
+.searcher image {
+  width: 26rpx;
+  height: 26rpx;
+  float: left;
+  margin-left: 256rpx;
+  margin-top: 24rpx;
+}
+.searcher input {
+  width: 224rpx;
+  height: 26rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #999;
+} */
+.searcher {
+  width: 690rpx;
+  height: 76rpx;
+  background-color: #f5f5f5;
+  margin-left: 30rpx;
+}
+
+.searcher image {
+  width: 26rpx;
+  height: 26rpx;
+  float: left;
+  margin-left: 226rpx;
+  margin-top: 24rpx;
+}
+.searcher input {
+  width: 224rpx;
+  height: 26rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+/* 下拉列表 */
+.recom .select_box{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  background: #fff;
+  color: #999;
+  margin-top: 30rpx;
+  position: relative;
+}
+.recom .li{
+  width: 166rpx;
+  overflow: hidden;
+}
+.city{
+  margin-left: 20rpx;
+}
+.recom .select{
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border:1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+.recom .select_text{
+  font-size: 24rpx;
+  flex: 1;
+  color: #999999;
+}
+.recom .select_img{
+  width: 26rpx;
+  height: 26rpx;
+  display: block;
+  transition:transform 0.3s;
+}
+.recom .select_img_rotate{
+  transform:rotate(180deg); 
+}
+.recom .option_box{
+  position: absolute;
+  top: 70rpx;
+  width: 166rpx;
+  border:1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+.recom .option{
+  display: block;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #999999;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+.welfare{
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+.welfare .title{
+  font-size: 24rpx;
+  font-weight: 600
+}
+.welfare .ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+.welfare .ul navigator{
+  width: 220rpx;
+}
+.recom{
+  padding: 10rpx 30rpx;
+}
+.recom .ul navigator{
+  width: 340rpx;
+  margin: 10rpx 0;
+}
+.recom .ul .tit{
+  font-size: 24rpx;
+  line-height: 50rpx;
+  color: #999999;
+}
+/* 大学介绍列表 */
+.content {
+  border-bottom: 20rpx solid #F5F5F5;
+  width: 100%;
+  overFlow: hidden;
+  padding-bottom: 30rpx;
+  background-color: #ffffff;
+}
+/* 标题 */
+.contentTitle {
+  display: block;
+  font-size: 34rpx;
+  font-weight: bolder;
+  color: #454545;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+/* 图片 */
+.contentImage {
+  display: block;
+  float: left;
+  width: 216rpx;
+  height: 216rpx;
+  margin-top: 22rpx;
+  margin-left: 30rpx;
+}
+.contentText {
+  /* border: 1rpx solid black; */
+  float: left;
+  margin-left: 52rpx;
+  margin-top: 22rpx;
+}
+.contentText text {
+  display: block;
+  font-size: 28rpx;
+  color: #454545;
+  margin-bottom: 8rpx;
+}
+.viewLine {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f5f5f5;
+}
+.contentBig .content:last-child {
+  border-bottom: none;
+}

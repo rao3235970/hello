@@ -1,0 +1,8 @@
+<!-- 答疑解惑详情 -->
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class='layoutBox'>
+  <view class='detailsTitle'>{{details.answer_title}}</view>
+  <view class='detailsTime'>{{details.create_time}}</view>
+  <view class='detailsType'>{{details.answer_content}}</view>
+  <view class='detailsContent'><template is="wxParse" data="{{wxParseData:article.nodes}}" /></view>
+</view>

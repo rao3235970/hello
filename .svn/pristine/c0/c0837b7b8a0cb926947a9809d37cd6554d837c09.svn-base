@@ -1,0 +1,17 @@
+<!--pages/message/message.wxml-->
+<view class="question-info">
+    <view class="answer" wx:for="{{info}}" wx:key="key">
+        <view class="photo">
+            <image src="{{item.avatar}}" />
+        </view>
+        <view class="right">
+            <view class="name">
+                <view class="nickname" wx:if="{{item.nickname==''}}">匿名</view>
+                <view class="nickname" wx:else>{{item.nickname}}</view>
+                <view class="time">{{item.comment_createtime}}</view>
+            </view>
+            <view class="text">{{item.comment_content}}</view>
+        </view>
+    </view>
+    <view class="tips" wx:if="{{info==''}}">暂无回答！</view>
+</view>

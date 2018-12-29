@@ -1,0 +1,21 @@
+<!--pages/team/team.wxml-->
+<view class="list" wx:if="{{status==200}}">
+  <view class='countnum'>共{{teamList.count}}人</view>
+  <view class="li" wx:for="{{teamList.data}}" wx:key="key" bindtap='team_details' data-item="{{item}}">
+    <image class='tou' src='{{item.avatar}}'></image>
+    <view class="name">
+
+      <text class='nickname'>{{item.nickname}}({{item.overseas_status}})</text>
+      <text class='phone'>{{item.phone}}</text>
+    </view>
+    <view class="arrow">
+      <view class='time'>{{item.create_time}}</view>
+      <view class='num'>推荐{{item.num}}人</view>
+
+    </view>
+
+    <!-- <image class="arrow" mode="widthFix" src="{{api}}images/my_gd@2x.png" /> -->
+  </view>
+
+</view>
+<view class="tips" wx:elif="{{status==400}}">暂无数据！</view>

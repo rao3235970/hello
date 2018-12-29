@@ -1,0 +1,226 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx522a6cbf917d1ce6",
+	"projectname": "dispatch",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 29,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的问答",
+					"pathName": "pages/my-question/my-question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的二维码",
+					"pathName": "pages/code/code",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分记录",
+					"pathName": "pages/integral-list/integral-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的客户",
+					"pathName": "pages/my-customer/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现申请",
+					"pathName": "pages/cash/cash",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的发布",
+					"pathName": "pages/my-release/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "线上学习",
+					"pathName": "pages/on_line/on_line",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "答疑解惑",
+					"pathName": "pages/faq/faq",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "游学",
+					"pathName": "pages/study-detail/study-detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/mycollection/mycollection",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分记录",
+					"pathName": "pages/integral-list/integral-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "边学变赚",
+					"pathName": "pages/work-study/work-study",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/mycollection/mycollection",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "scene=14,2",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "提现",
+					"pathName": "pages/cash/cash",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "提现记录",
+					"pathName": "pages/cash-record/cash-record",
+					"query": "",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "indrx",
+					"pathName": "pages/index/index",
+					"query": "id=60"
+				},
+				{
+					"id": -1,
+					"name": "indrx",
+					"pathName": "pages/index/index",
+					"query": "scene=\"72,1\""
+				},
+				{
+					"id": -1,
+					"name": "indrx",
+					"pathName": "pages/index/index",
+					"query": "scene=\"72,1\""
+				},
+				{
+					"id": -1,
+					"name": "indrx",
+					"pathName": "pages/index/index",
+					"query": "scene=\"72,1\""
+				},
+				{
+					"id": -1,
+					"name": "日语培训",
+					"pathName": "pages/training/training",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "团队管理",
+					"pathName": "pages/team/team",
+					"query": ""
+				},
+				{
+					"id": 23,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "scene=108%2C1"
+				},
+				{
+					"id": -1,
+					"name": "游学详情",
+					"pathName": "pages/study-detail/study-detail",
+					"query": ""
+				},
+				{
+					"id": 25,
+					"name": "indexasdfas",
+					"pathName": "pages/index/index",
+					"query": "scene=118%2C1"
+				},
+				{
+					"id": -1,
+					"name": "交流互助",
+					"pathName": "pages/exchange/exchange",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布视频",
+					"pathName": "pages/video/video",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "服务详情",
+					"pathName": "pages/service/service",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人中心啊",
+					"pathName": "pages/user/user"
+				}
+			]
+		}
+	}
+}

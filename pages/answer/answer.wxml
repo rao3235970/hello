@@ -1,0 +1,6 @@
+<!--pages/question/question.wxml-->
+<form class="question" bindsubmit="questSubmit">
+    <view class="title">{{options.interlocution_title}}</view>
+    <textarea name="interlocution" placeholder="我来回答……" bindinput="inputs" placeholder-style="color:#C0C0C0;font-size:30rpx"/>
+    <button class="btn" formType="submit">发布</button>
+</form>

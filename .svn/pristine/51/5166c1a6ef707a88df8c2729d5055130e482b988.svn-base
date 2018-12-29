@@ -1,0 +1,86 @@
+/* pages/question-info/question-info.wxss */
+.question-info{
+    padding: 0 30rpx;
+    border-top: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.questioner,.answer{
+    padding: 30rpx 0;
+    border-bottom: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.question-info .photo{
+    display: block;
+    float: left;
+    width: 100rpx;
+    overflow: hidden;
+}
+.question-info .photo image{
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+}
+.question-info .right{
+    display: block;
+    float: left;
+    width: 550rpx;
+    font-size: 33rpx;
+    margin-left: 30rpx;
+    overflow: hidden;
+}
+.question-info .right .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+    overflow: hidden;
+}
+.question-info .right .name .nickname{
+    width: 300rpx;
+}
+.question-info .right .name .time{
+    width: 270rpx;
+    height: 45rpx;
+    font-size: 30rpx;
+    text-align: right;
+    color: #999;
+    overflow: hidden;
+}
+.question-info .right .text{
+    font-size: 32rpx;
+    margin-bottom: 20rpx;
+    line-height: 45rpx;
+}
+.question-info .right .num{
+    font-size: 30rpx;
+    color: #999;
+}
+.question-info .tips{
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+    margin-top: 50rpx;
+}
+.question-info .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150rpx 0;
+    overflow: hidden;
+}
+.question-info .btn navigator{
+    width: 280rpx;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 50rpx;
+    font-size: 35rpx;
+    color: #999;
+    line-height: 80rpx;
+}
+.question-info .btn navigator:last-child{
+    border: 1px solid #2F71F6;
+    color: #2F71F6;
+}

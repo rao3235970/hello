@@ -1,0 +1,81 @@
+<!-- pages/helpInfo/helpInfo.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="title">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+    </view>
+    <view class="rule" bindtap="rule">活动规则</view>
+</view>
+<view class="title">
+    <view class="tit">日本签证</view>
+    <view class="price">
+        ¥999.00
+        <text>已有100人1元领取</text>
+    </view>
+    <view class="now">
+        <progress percent="20" active activeColor="#FF135B" backgroundColor="#FFD9E5" border-radius="50" />
+        <view class="progress">
+            <text>已砍88元</text>
+            <text>还剩128元</text>
+        </view>
+    </view>
+</view>
+<!-- 助力榜 -->
+<view class="list">
+    <view class="tab">助力榜</view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="tips">助力50元</view>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="tips">助力50元</view>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="tips">助力50元</view>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="tips">助力50元</view>
+    </view>
+    <view class="li">
+        <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+        <view class="name">小脑斧</view>
+        <view class="tips">助力50元</view>
+    </view>
+</view>
+<!--分享-->
+<view class="share" wx:if="{{share}}">
+    <view class="tit">邀请好友即可领取1元签证</view>
+    <button open-type="share">
+        <image src="{{api}}images/wx@2x.png" />
+        <text class="text">转发给好友</text>
+    </button>
+</view>
+<view class="bgn" wx:if="{{bgn}}"></view>
+<!-- 说明 -->
+<view class="description" bindtap="desc" wx:if="{{desc}}">
+    <view class="tit">活动规则</view>
+    <view class="content">
+        <text>1.邀请好友一起看家，砍到1元即可领取商品</text>
+        <text>2.对于同一个助力，只能帮助砍一次</text>
+    </view>
+    <view class="confirm">确定</view>
+</view>
+<view class="bgn" wx:if="{{bgn}}"></view>
+<view class="footer">
+    <button class="btn" bindtap="helpBtn">喊好友助力</button>
+</view>

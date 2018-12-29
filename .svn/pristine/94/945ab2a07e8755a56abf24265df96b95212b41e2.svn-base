@@ -1,0 +1,7 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+<view class='layoutBox'>
+  <view class='detailsTitle'>{{details.question_title}}</view>
+  <view class='detailsType'>{{details.question_type}}</view>
+  <view class='detailsTime'>{{details.create_time}}</view>
+  <view class='detailsContent'><template is="wxParse" data="{{wxParseData:article.nodes}}" /></view>
+</view>

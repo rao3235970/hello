@@ -1,0 +1,35 @@
+<view class="head">
+  <text>总积分</text>
+  <text>{{myscore}}</text>
+</view>
+<view class='zw'></view>
+<view class='list'>
+  <view class='item'>
+    <text>提现方式</text>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{pay_method}}">
+      <text class="picker">
+        {{pay_method[index]}}
+      </text>
+    </picker>
+      
+      <image src='../../images/chevroncopyifo.png'></image>
+  </view>
+  <view class='item'>
+    <text>账户名称</text>
+    <input bindinput='user'></input>
+  </view>
+   <view class='item'>
+    <text>{{pay_method[index]}}账号</text>
+    <input bindinput='zfb'></input>
+  </view>
+  
+
+</view>
+<view class='zw'></view>
+<view class='list'>
+  <view class='item-cash'>
+    <text>提现金额</text>
+    <input placeholder='请输入提现金额' type="number" placeholder-class="pla"  bindinput='pic' value='{{monry}}'></input>
+  </view>
+</view>
+<button class='btn' bindtap='cash'>确定提现</button>

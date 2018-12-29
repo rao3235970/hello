@@ -1,0 +1,216 @@
+<!--pages/university-details/university-details.wxml-->
+<!-- <text>pages/university-details/university-details.wxml</text> -->
+<!-- 轮播图 -->
+<view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{img}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<import src="../../wxParse/wxParse.wxml" />
+<!-- <image class="imageView" src="{{imgUrls.school_cover}}"></image> -->
+<view class="viewInform">
+  <view class="schoolName">{{imgUrls.school_name}}</view> 
+  <view class="viewText">
+    <view class="viewType">
+      <view class="schoolType" wx:if="{{imgUrls.school_type_name}}">学校类型:{{imgUrls.school_type_name}}</view>
+       <view class="schoolType" wx:if="{{imgUrls.school_nature!=null}}">学校性质:{{imgUrls.school_nature}}</view>
+       <view class="schoolArea" wx:if="{{imgUrls.school_rutime}}">入学时间:{{imgUrls.school_rutime}}</view>
+       <view class="schoolArea" wx:if="{{imgUrls.school_edu}}">教育领域:{{imgUrls.school_edu}}</view>
+        <view class="schoolArea" wx:if="{{imgUrls.school_time!=null}}">创办时间:{{imgUrls.school_time}}</view>
+    </view>
+    <view class="viewType">
+      <view class="schoolType" wx:if="{{imgUrls.school_area}}">所在地区:{{imgUrls.school_area}}</view>
+      
+       <view class="schoolArea" wx:if="{{imgUrls.school_address}}">地理位置:{{imgUrls.school_address}}</view>
+        
+       
+    </view>
+    
+  </view>
+  <view class="schoolAddress" wx:if="{{imgUrls.school_net!=null}}">学校网站:{{imgUrls.school_net}}</view>
+  <view class="schoolAddress" wx:if="{{imgUrls.school_tel}}">学校电话:{{imgUrls.school_tel}}</view>
+  <view class="schoolAddress" wx:if="{{imgUrls.school_gps}}">学校地址:{{imgUrls.school_gps}}</view>
+  <!-- <view class="schoolAddres" wx:if="{{imgUrls.school_nature!=null}}">学校性质:{{imgUrls.school_nature}}</view> -->
+
+</view>
+<!-- 基本信息 -->
+<!-- <view class="basicInform"> -->
+  <!-- <view class="basicTitle">基本信息</view>
+  <view class="basicDate" wx:if="{{imgUrls.create_time!=null}}">建校时间:{{imgUrls.create_time}}</view>
+  <view class="basicLocation">地理位置:{{imgUrls.school_address}}</view> -->
+ <!-- </view> -->
+
+ 
+
+
+  <!-- <view class="basicLocation" wx:if="{{school_term}}">申请条件:
+    <template is="wxParse" data="{{wxParseData:school_term.nodes}}" />
+  </view> -->
+  <!-- <view class="basicLocation" wx:if="{{imgUrls.school_edu!=null}}">教育领域:{{imgUrls.school_edu}}</view> -->
+  <!-- <view class="basicScale">中国留学生比例:40%</view> -->
+  <view class="basicFacility">
+    <!-- <view class="viewTitleText">硬件设施:</view>
+    <view class="viewStar">
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+    </view> -->
+  </view>
+
+
+  <!-- <view class="basicCondition"> -->
+    <!-- <view class="viewTitleText">宿舍条件:</view> -->
+    <!-- <view class="viewStar">
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+      <image src="{{api}}images/xiaoxingxing.png"></image>
+    </view> -->
+  <!-- </view> -->
+  <!-- <view class="basicLocation">地理位置:{{imgUrls.school_address}}</view> -->
+
+ 
+<!-- 学校介绍 -->
+<view class='basicInform'>
+  <view class="basicTitle">学校介绍</view>
+  <view class='basicDate'>
+        <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+</view>
+<!-- 学费介绍 -->
+<view class='basicInform' wx:if="{{imgUrls.school_question}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_source!=''}}">学费介绍</view>
+  <view class='basicDate'>
+     <template is="wxParse" data="{{wxParseData:school_question.nodes}}" />
+  </view>
+</view>
+<!-- 专业 -->
+<view class='basicInform' wx:if="{{imgUrls.school_major}}">
+  <view class="basicTitle">学校专业</view>
+  <view class='basicDate' wx:for="{{imgUrls.school_major}}" data-item="{{item}}"> {{item}}</view>
+</view>
+
+<!-- 学校推荐 -->
+<!-- <view class='basicInform' wx:if="{{imgUrls.school_groom}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_groom!=''}}">学校推荐</view>
+  <view class='basicDate' wx:for="{{imgUrls.school_groom}}" data-item="{{item}}">{{item}}</view>
+</view> -->
+
+<view class='basicInform' wx:if="{{imgUrls.school_unit}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_unit!=''}}">就业单位</view>
+  <view class='basicDate'>
+    <template is="wxParse" data="{{wxParseData:school_unit.nodes}}" />
+  </view>
+</view>
+
+<view class='basicInform' wx:if="{{imgUrls.school_care}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_care!=''}}">学部学科介绍</view>
+  <view class='basicDate' style='margin-bottom:100rpx;'>
+    <template is="wxParse" data="{{wxParseData:school_care.nodes}}" />
+  </view>
+</view>
+<view class='basicInform' wx:if="{{imgUrls.school_pro}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_pro!=''}}">专业设置</view>
+  <view class='basicDate'>
+    <template is="wxParse" data="{{wxParseData:school_pro.nodes}}" />
+  </view>
+</view>
+<view class='basicInform' wx:if="{{imgUrls.school_source}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_source!=''}}">课程设置</view>
+  <view class='basicDate'>
+    <template is="wxParse" data="{{wxParseData:school_source.nodes}}" />
+  </view>
+</view>
+
+<view class='basicInform' wx:if="{{imgUrls.school_special}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_special!=''}}">学校特色</view>
+  <view class='basicDate' style='margin-bottom:100rpx;'>
+    <template is="wxParse" data="{{wxParseData:school_special.nodes}}" />
+  </view>
+</view>
+<view class='basicInform' wx:if="{{imgUrls.school_zan}}">
+  <view class="basicTitle" wx:if="{{imgUrls.school_zan!=''}}">就业支持</view>
+  <view class='basicDate' style='margin-bottom:100rpx;'>
+    <template is="wxParse" data="{{wxParseData:school_zan.nodes}}" />
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 学生关心 -->
+<!-- <view class="studentCare">
+  <view class="studentTitle">学生关心</view>
+  <view class="recruitContent">
+    {{imgUrls.school_care}}
+  </view>
+</view> -->
+<!-- 学生反馈 -->
+<!-- <view class="studentCare">
+  <view class="studentTitle">学生反馈</view>
+  <view class="recruitContent">
+    {{imgUrls.school_question}}
+  </view>
+</view> -->
+<!-- 学校环境图片-->
+<view class="schoolEnvir" wx:if="{{img.length}}">
+  <view class="envirTitle">学校环境</view>
+  <scroll-view class='box-Sv' scroll-x>
+    <image wx:for="{{img}}" wx:key="{{index}}" data-item="{{item}}" src='{{item}}'  bindtap='img'></image>
+    <view class="hint" wx:if="{{img==''}}">暂无相关图片</view>
+  </scroll-view>
+</view>
+<!-- 学校环境视频-->
+<!-- <view class="schoolEnvirVi"> -->
+<!-- 标题 -->
+<!-- <view class="envirTitleVi">学校环境</view> -->
+<!-- 视频部分 -->
+<!-- <view class="viewVideo"> -->
+<!-- 视频封面 -->
+<!-- <scroll-view class='videoCover' wx:for="{{imgUrls}}" data-item="{{item}}" scroll-x>
+      <image class="videoImg" src="{{imgUrls.school_type_img}}" />
+      <image class="play" src="{{api}}images/shipin_bofang@2x.png" />
+      <view class="videoContent">
+        实地考察日本语学校实地考察日本语学校
+      </view>
+    </scroll-view> -->
+<!-- <scroll-view class='box-sv' scroll-x>
+      <navigator hover-class='none' url='/pages/video-details/video-details?school_video={{item}}' wx:for="{{schoolVideo}}" data-item="{{item}}" wx:if="{{item!=''}}">
+        <view class="videoCover">
+          <image class="videoImg" src="{{imgUrls.school_type_img}}"></image>
+          <image class="play" src="{{api}}images/shipin_bofang@2x.png" data-item="{{item}}"></image>
+        </view>
+      </navigator>
+      <view class="hinr" wx:if="{{schoolVideo==''}}">
+        暂无相关视频
+      </view>
+    </scroll-view>
+  </view>
+</view> -->
+<!-- 底部按钮 -->
+<view class="bottomView">
+  <view hover-class="none" url='/pages/index/index' class="viewReturn" bindtap='onClickReturn'>
+    返回首页
+  </view>
+  <navigator hover-class="none" url='/pages/study-plan/study-plan?school_id={{oid}}' class="viewFree">
+    免费留学评估
+  </navigator>
+</view>

@@ -1,0 +1,43 @@
+/* pages/cash-record/cash-record.wxss */
+.isNull{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200rpx;
+  font-size: 50rpx;
+color:rgba(153,153,153,1);
+}
+.cash {
+  border-top: 2rpx solid #ececec;
+}
+
+.list {
+  height: 90rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #ececec;
+  padding:20rpx 30rpx;
+  line-height: 45rpx;
+}
+
+.integral_record {
+  color: #0f1d37;
+  display: block;
+  width: 60%;
+  float: left;
+}
+
+.time {
+  font-size: 28rpx;
+  display: block;
+  width: 60%;
+  float: left;
+  color: #8a8585;
+}
+
+.integral {
+  text-align: right;
+  display: block;
+  float: right;
+  width: 40%;
+  line-height: 0;
+}

@@ -1,0 +1,152 @@
+/* pages/study-detail/study-detail.wxss */
+.banner {
+  display: block;
+  width: 100%;
+  height: 470rpx;
+}
+.textTitle {
+  display: block;
+  font-size: 40rpx;
+  color: #333333;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.textDate {
+  display: block;
+  font-size: 28rpx;
+  color: #333333;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.viewText {
+  float: left;
+}
+.textMoney {
+  color: #ff135b;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+.textSmall {
+  font-size: 28rpx;
+  color: #999999;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.textCrestor {
+  display: block;
+  float: left;
+}
+.textOneself {
+  display: block;
+  float: left;
+  margin-left: 40rpx;
+}
+/* 加减input框 */
+/*主容器*/
+.stepper {
+  width:176rpx;
+  height:52rpx;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 6rpx;
+  float: left;
+  margin-top: 60rpx;
+  margin-left: 158rpx;
+}
+/*加号和减号*/
+.stepper text {
+  float: left;
+  width: 38rpx;
+  line-height: 52rpx;
+  text-align: center;
+  color: #333333;
+  margin-left: 6rpx;
+}
+/*数值*/
+.stepper input {
+  width: 80rpx;
+  height: 52rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #333333;
+}
+/*普通样式*/
+.stepper .normal {
+  color:black;
+}
+/*禁用样式*/
+.stepper .disable {
+  color: #ccc;
+}
+/* 第一条宽条线 */
+.wideLineFirst {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 196rpx;
+}
+.textDiscuss {
+  font-size: 28rpx;
+  color: #333333;
+  display: block;
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+.textMore {
+  font-size: 28rpx;
+  color: #999999;
+  display: block;
+  margin-top: 30rpx;
+  margin-left: 430rpx;
+  float: left;
+}
+.imageMore {
+  width: 24rpx;
+  height: 24rpx;
+  display: block;
+  float: left;
+  margin-top: 36rpx;
+  margin-left: 9.6rpx;
+}
+/* 第二条宽条线 */
+.wideLineSecond {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+  margin-top: 100rpx;
+}
+/* 行程介绍 */
+.contentTitle {
+  display: block;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #333333;
+}
+/* 细线 */
+.thinLine {
+  width: 720rpx;
+  height: 2rpx;
+  background-color: #e5e5ea;
+  margin-left: 30rpx;
+  margin-top: 40rpx;
+}
+.contentAddress {
+  margin-top: 50rpx;
+  width: 100%;
+  border-top: 1px solid #e5e5ea;
+}
+.contentAddress text {
+  display: block;
+  font-size: 28rpx;
+  color: #7d7d7d;
+}

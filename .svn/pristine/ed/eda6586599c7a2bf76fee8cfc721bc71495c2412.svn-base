@@ -1,0 +1,9 @@
+<!--pages/qr_code/ot.wxml-->
+<view>
+<image src='{{img}}' wx:if="{{img}}"></image>
+</view>
+<form bindsubmit="formSubmit" bindreset="formReset" wx:if="{{!img}}">
+  <input  type='text' name='name' placeholder='请输入姓名' class='common' value="{{name}}"></input>
+  <input  type='number' name='tel' placeholder='请输入电话' class='common' value="{{tel}}"></input>
+  <button class="formbtn" formType="submit">立即申请</button>
+</form>

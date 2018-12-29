@@ -1,0 +1,78 @@
+<!--pages/university/university.wxml-->
+<!-- 搜索框 -->
+<view class="searcher">
+  <image src="{{api}}images/searchcopy@2x.png"></image>
+  <input type="text" placeholder='请输入该学校名字' bindconfirm='findSchool'></input>
+</view>
+<view class="welfare recom">
+  <!-- <view class="title">学习专区</view> -->
+  <view class='select_box'>
+    <view class="li">
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{show}}" style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-item="{{item}}" data-index='{{index}}' catchtap='optionTap'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li city">
+      <view class='select' catchtap='selectTapa'>
+        <text class='select_text'>{{selecta[indexa]}}</text>
+        <image class='select_img {{showa&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showa}}" style='height:{{showa?(selecta.length>5?300:selecta.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selecta.length-1&&"border:0;"}}' wx:for='{{selecta}}' wx:key='this' data-index='{{index}}' data-item='{{item}}' catchtap='optionTapa'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <!-- <view class="li">
+      <view class='select' catchtap='selectTapb'>
+        <text class='select_text'>{{selectb[indexb]}}</text>
+        <image class='select_img {{showb&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showb}}" style='height:{{showb?(selectb.length>5?300:selectb.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectb.length-1&&"border:0;"}}' wx:for='{{selectb}}' wx:key='this' data-index='{{index}}' catchtap='optionTapb'>
+          {{item}}
+        </text>
+      </view>
+    </view> -->
+    <!-- <view class="li">
+      <view class='select' catchtap='selectTapc'>
+        <text class='select_text'>{{selectc[indexc]}}</text>
+        <image class='select_img {{showc&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showc}}" style='height:{{showc?(selectc.length>5?300:selectc.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectc.length-1&&"border:0;"}}' wx:for='{{selectc}}' wx:key='this' data-index='{{index}}' catchtap='optionTapc'>
+          {{item}}
+        </text>
+      </view>
+    </view> -->
+  </view>
+  <!-- <view class="ul">
+     <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/shengxue@3x.png" />
+      <view class="tit">日语学习</view>
+    </navigator> 
+     <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/meishu@3x.png" />
+      <view class="tit">日语学习</view>
+    </navigator>
+  </view> -->
+</view>
+<view class="contentBig">
+  <navigator class="content" wx:for="{{schoolInfo}}" data-item="{{item}}" hover-class='none'>
+    <text class="contentTitle">{{item.school_name}}</text>
+    <image src="{{item.school_cover}}" class="contentImage"></image>
+    <view class="contentText">
+      <text>学校类型:{{item.school_type_name}}</text>
+      <text>所在地区:{{item.school_area}}</text>
+      <text>教育领域:{{item.school_edu}}</text>
+      <text>电  话:{{item.school_tel}}</text>
+      <text>地  址:{{item.school_address}}</text>
+    </view>
+  </navigator>
+</view>

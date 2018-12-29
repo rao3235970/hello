@@ -1,0 +1,34 @@
+@import "../../wxParse/wxParse.wxss";
+.layoutBox{
+  width: 690rpx;
+  margin: 0rpx auto;
+}
+.detailsTitle {
+  font-size: 34rpx;
+  color: #454545;
+  font-weight: bolder;
+}
+.layoutBox .detailsType{
+  font-size: 30rpx;
+  /* color: #808080; */
+  margin-top: 30rpx;
+  /* width: 110rpx; */
+  /* height: 32rpx; */
+  float: left;
+}
+.detailsTime{
+  font-size: 30rpx;
+  color: #808080;
+  /* letter-spacing: 0; */
+  width: 190rpx;
+  float: left;
+  /* height: 33rpx; */
+  margin-top: 28rpx;
+}
+.detailsContent{
+  width: 690rpx;
+  margin: 0rpx auto;
+  clear: both;
+  padding-top: 28rpx;
+  font-size:32rpx;
+}

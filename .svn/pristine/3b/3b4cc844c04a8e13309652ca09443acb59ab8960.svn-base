@@ -1,0 +1,67 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx522a6cbf917d1ce6",
+	"projectname": "dispatch",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的问答",
+					"pathName": "pages/my-question/my-question",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的二维码",
+					"pathName": "pages/code/code",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "积分记录",
+					"pathName": "pages/integral-list/integral-list",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理",
+					"pathName": "pages/address/address"
+				}
+			]
+		}
+	}
+}

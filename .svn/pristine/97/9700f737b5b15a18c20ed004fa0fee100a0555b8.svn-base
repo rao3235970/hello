@@ -1,0 +1,14 @@
+<!--pages/lang-school/lang-school.wxml-->
+<!-- 顶部学校分类卡片 -->
+<view class='schoolClassify'>
+  <image src='/images/card-1copy2@2x.png' id='school' bindtap="tapName"></image>
+  <text>语言学校</text>
+</view>
+<view class='schoolClassify'>
+  <image src='/images/card-2copy2@2x.png'></image>
+  <text>专门学校</text>
+</view>
+<view class='schoolClassify'>
+  <image src='/images/card-3copy@2x.png'></image>
+  <text>大学</text>
+</view>

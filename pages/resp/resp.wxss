@@ -1,0 +1,45 @@
+/* pages/resp/resp.wxss */
+.common{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+}
+.formbtn {
+  width: 70%;
+  font-size: 35rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 120rpx auto;
+  text-align: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 50rpx;
+}
+
+.picker{
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.swiper image{
+  height: 350rpx;
+}
+.tag image{
+  height: 150rpx;
+}
+.tag swiper{
+  height: 150rpx;
+}
+image{
+width:100%;
+height:auto;
+border:0;
+vertical-align:text-bottom;
+
+}
+swiper{
+display: block;
+height: 350rpx;
+}

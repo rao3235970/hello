@@ -1,0 +1,33 @@
+<!--pages/study-plan/study-plan.wxml-->
+<!-- <text>pages/study-plan/study-plan.wxml</text> -->
+<view class="viewForm">
+  <!-- 留学申请 -->
+  <!-- <view class="formTitle">留学申请</view> -->
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="common">
+      <picker mode="date" value="{{date}}" name='create_time' start="{{today}}" bindchange="bindDateChange">
+        <view class="picker common">
+          日期选择: {{date}}
+        </view>
+      </picker>
+    </view>
+    <!-- <view class="viewInput"> -->
+      <picker class="common" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          最高学历：{{array[index]}}
+        </view>
+      </picker>
+      <!-- <input type="text" placeholder='填写最高学历' name='enroll_edu'></input> -->
+    <!-- </view> -->
+    <view class="viewInput">
+      <input type="text" placeholder='请输入姓名' name='enroll_name'></input>
+    </view>
+    <view class="viewInput">
+      <input type="text" placeholder='请输入微信' name='enroll_weiChat'></input>
+    </view>
+    <view class="viewInput">
+      <input type="text" placeholder='请输入电话' name='enroll_tel'></input>
+    </view>
+    <button class="viewButton" formType="submit">获取留学方案</button>
+  </form>
+</view>

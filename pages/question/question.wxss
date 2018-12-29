@@ -1,0 +1,20 @@
+/* pages/question/question.wxss */
+.question textarea{
+    height: 270rpx;
+    font-size: 30rpx;
+    line-height: 50rpx;
+    padding: 30rpx;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.question .btn{
+    width: 70%;
+    font-size: 35rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 120rpx auto;
+    text-align: center;
+    background: #0084FF;
+    color: #fff;
+    border-radius: 50rpx
+}

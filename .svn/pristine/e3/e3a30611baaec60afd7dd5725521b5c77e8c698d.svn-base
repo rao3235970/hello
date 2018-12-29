@@ -1,0 +1,49 @@
+<view class='list'>
+  <view class="head" wx:if="{{data.length>0}}">
+    <text>全部</text>
+    <text bindtap='edit'>{{radio_state?'取消':'编辑'}}</text>
+  </view>
+  <block wx:for="{{data}}" wx:for-index="idx">
+    <view class='item' wx:if="{{item.type==1}}">
+      <block wx:if="{{radio_state}}">
+        <image src='{{item.radio_src}}' class='check' data-index='{{idx}}' bindtap='radio'></image>
+      </block>
+            <navigator class="title" hover-class="none" url="/pages/question-info/question-info?inter_id={{item.interlocution_id}}">
+
+      <view class='cont'>
+        <text>{{item.interlocution_title}}</text>
+        <text>{{item.comment.comment_content}}</text>
+      </view>
+      </navigator>
+    </view>
+    <view class='item-video' wx:if="{{item.type==2}}">
+      <block wx:if="{{radio_state}}">
+        <image src='{{item.radio_src}}' class='check' data-index='{{idx}}' bindtap='radio'></image>
+      </block>
+
+      <navigator class="video" hover-class="none" url="/pages/video-info/video-info?video_id={{item.video_id}}">
+
+      <view style='flex:2'>
+        <view class='box'>
+          <image src='{{item.video_cover}}' class='video'></image>
+          <view class='zz'></view>
+          <image src='http://dispatch.yuxwl.top/images/shipin_bofang@2x.png' class='play'></image>
+        </view>
+        <text>{{item.video_title}}</text>
+      </view>
+ </navigator>
+    </view>
+  </block>
+</view>
+<view class='footerbox' wx:if="{{radio_state}}">
+  <view class='footer'>
+    <view bindtap='all_radio'>
+      <image src='../../images/fb_xz.png' wx:if="{{state}}"></image>
+      <image src='../../images/chackbox_false.png' wx:if="{{!state}}"></image>
+      <text>全选</text>
+    </view>
+    <text bindtap='remove_item'>删除</text>
+  </view>
+  <view class='footer-zw'></view>
+</view>
+<text wx:if="{{data.length==0}}" class='isNull'>暂无记录</text>

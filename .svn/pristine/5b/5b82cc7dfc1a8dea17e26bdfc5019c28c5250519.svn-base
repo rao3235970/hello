@@ -1,0 +1,8 @@
+<!--pages/information-details/information-details.wxml-->
+<!-- <text>pages/information-details/information-details.wxml</text> -->
+<view class="contain">
+  <view class="viewTitle">{{contentTextUrl.information_title}}</view>
+  <view class="viewDate">{{contentTextUrl.create_time}}</view>
+  <view class="viewContent">{{contentTextUrl.information_details}}</view>
+  <!-- <image src="{{contentTextUrl.article_img}}" class="imageContent"></image> -->
+</view>

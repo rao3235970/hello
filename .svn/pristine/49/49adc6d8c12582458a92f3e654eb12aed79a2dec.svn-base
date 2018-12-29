@@ -1,0 +1,98 @@
+<!--pages/university-details/university-details.wxml-->
+<!-- <text>pages/university-details/university-details.wxml</text> -->
+<!-- 轮播图 -->
+<!-- <view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view> -->
+<image class="imageView" src="{{imgUrls.school_type_img}}"></image>
+<view class="viewInform">
+  <view class="schoolName">{{imgUrls.school_name}}</view>
+  <view class="viewText">
+    <view class="viewType">
+      <view class="schoolType">学校类型:{{imgUrls.school_type_name}}</view>
+      <view class="schoolField">教育领域:{{imgUrls.school_edu}}</view>
+    </view>
+    <view class="viewArea">
+      <view class="schoolArea">所在地区:{{imgUrls.school_area}}</view>
+      <view class="schoolTel">电话:{{imgUrls.school_tel}}</view>
+    </view>
+  </view>
+  <view class="schoolAddress">地址:{{imgUrls.school_address}}</view>
+</view>
+<!-- 基本信息 -->
+<view class="basicInform">
+  <view class="basicTitle">基本信息</view>
+  <view class="basicDate">建校时间:{{imgUrls.create_time}}</view>
+  <view class="basicScale">中国留学生比例:40%</view>
+  <view class="basicFacility">
+    <view class="viewTitleText">硬件设施:</view>
+    <view class="viewStar">
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+    </view>
+  </view>
+  <view class="basicCondition">
+    <view class="viewTitleText">宿舍条件:</view>
+    <view class="viewStar">
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+      <image src="/images/xiaoxingxing.png"></image>
+    </view>
+  </view>
+  <view class="basicLocation">地理位置:{{imgUrls.school_address}}</view>
+</view>
+<!-- 学生关心 -->
+<view class="studentCare">
+  <!-- 标题 -->
+  <view class="studentTitle">学生关心</view>
+  <view class="recruitContent">
+    {{imgUrls.school_care}}
+  </view>
+</view>
+<!-- 学生反馈 -->
+<view class="studentCare">
+  <!-- 标题 -->
+  <view class="studentTitle">学生反馈</view>
+  <view class="recruitContent">
+    {{imgUrls.school_question}}
+  </view>
+</view>
+<!-- 学校环境图片-->
+<view class="schoolEnvir">
+  <!-- 标题 -->
+  <view class="envirTitle">学校环境</view>
+  <!-- 图片滚动 -->
+  <scroll-view class='box-sv' scroll-x >
+    <image wx:for="{{img}}" wx:key="{{index}}" src='{{item.ImgUrl}}' bindtap='img' mode="aspectFill" data-url='{{item.ImgUrl}}'></image>
+  </scroll-view>
+</view>
+<!-- 学校环境视频-->
+<view class="schoolEnvirVi">
+  <!-- 标题 -->
+  <view class="envirTitleVi">学校环境</view>
+  <!-- 视频 -->
+  <view class="viewVideo">
+    <video class="videoSrc" src="{{imgUrls.school_video}}"
+      binderror="videoErrorCallback" x5-playsinline="true" x5-video-player-type="h5" x5-video-player-type="h5" x5-vide o-player-fullscreen="true"></video>
+  </view>
+</view>
+<!-- 底部按钮 -->
+<view class="bottomView">
+  <view hover-class="none" url='/pages/index/index' class="viewReturn" bindtap='onClickReturn'>
+    返回首页
+  </view>
+  <navigator hover-class="none" url='/pages/study-plan/study-plan' class="viewFree">
+    免费留学评估
+  </navigator>
+</view>

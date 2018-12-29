@@ -1,0 +1,252 @@
+/* pages/university-details/university-details.wxss */
+
+/* 图片 */
+
+.imageView {
+  display: block;
+  width: 100%;
+  height: 470rpx;
+}
+
+/* 信息 */
+
+.viewInform {
+  border-bottom: 20rpx solid #f7f7f7;
+  padding: 40rpx 30rpx;
+}
+
+/* 标题 */
+
+.schoolName {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 类型和领域 */
+
+.viewType {
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+  margin-top: 22rpx;
+}
+
+/* 学校领域 */
+
+.schoolField {
+  margin-top: 30rpx;
+}
+
+/* 地区和电话 */
+
+.viewArea {
+  margin-top: 22rpx;
+  font-size: 28rpx;
+  color: #333;
+  float: left;
+  margin-left: 84rpx;
+}
+
+/* 学校电话 */
+
+.schoolTel {
+  margin-top: 30rpx;
+}
+
+/* 类型领域地区电话模块 */
+.viewText {
+  overflow: hidden;
+}
+/* 地址 */
+.schoolAddress {
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #333;
+  /* 做限制 */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 698rpx;
+  height: 32rpx;
+}
+/* 基本信息 */
+.basicInform {
+  padding: 40rpx 30rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+  color: #333333;
+}
+/* 基本信息标题 */
+.basicTitle {
+  font-size: 32rpx;
+}
+.basicDate {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.basicScale {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+.basicFacility {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+/* 小星星 */
+.viewTitleText {
+  float: left;
+}
+.viewStar {
+  overflow: hidden;
+  margin-left: 6rpx;
+  float: left;
+}
+.viewStar image {
+  display: block;
+  width: 34rpx;
+  height: 34rpx;
+  float: left;
+  margin-left: 6rpx;
+}
+.basicCondition {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.basicLocation {
+  font-size: 28rpx;
+  margin-top: 30rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 698rpx;
+  height: 32rpx;
+}
+/* 学生关心 */
+.studentCare {
+  padding: 40rpx 30rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+}
+/* 学生关心标题 */
+.studentTitle {
+  font-size: 32rpx;
+  color: #333333;
+}
+.recruitContent {
+  font-size: 28rpx;
+  color: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 696rpx;
+  height: 364rpx;
+  line-height: 48rpx;
+  margin-top: 22rpx;
+}
+/* 学校环境 */
+.schoolEnvir {
+  padding-top: 30rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 20rpx solid #F7F7F7;
+}
+/* 标题 */
+.envirTitle {
+  font-size: 32rpx;
+  color: #333333;
+  margin-left: 30rpx;
+}
+/* 环境图片 */
+/* .schoolImage {
+  margin-top: 30rpx;
+  overflow: hidden;
+}
+.envirImage {
+  display: block;
+  float: left;
+  margin-left: 30rpx;
+  width: 296rpx;
+  height: 166rpx;
+} */
+/* swiper {
+  height: 166rpx;
+  display: block;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.slide-image {
+  width: 296rpx;
+  height: 166rpx;
+}
+swiper-item {
+  width: 316rpx;
+  margin: 0rpx;
+  padding: 0rpx;
+  transform: translate(0%,0rpx);
+} */
+/* 图片滚动 */
+.box-sv {
+  width: 700rpx;
+  padding: 20rpx 0;
+  height: 133rpx;
+  white-space:nowrap;
+  margin:3% auto;
+  }
+.box-sv image {
+  width: 200rpx;
+  height: 133rpx;
+  margin-right: 20rpx;
+  border-radius: 5px;
+  }
+  /* 播放视频 */
+  .schoolEnvirVi {
+    padding-top: 30rpx;
+    padding-bottom: 42rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+  }
+  /* 标题 */
+  .envirTitleVi {
+    font-size: 32rpx;
+    color: #333333; 
+  }
+  .viewVideo {
+    margin-top: 30rpx;
+  }
+  .videoSrc {
+    width: 292rpx;
+    height: 166rpx;
+  }
+  /* 底部按钮 */
+  .bottomView {
+    border-top: 1rpx solid #D8D8D8;
+    overflow: hidden;
+  }
+  /* 返回首页 */
+  .viewReturn {
+    width: 374rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    color: #333333;
+    font-size: 34rpx;
+    float: left;
+  }
+  /* 免费留学评估 */
+  .viewFree {
+    width: 376rpx;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    background-color: #2F71F6;
+    color: #FFFFFF;
+    font-size: 34rpx;
+    float: left;
+  }

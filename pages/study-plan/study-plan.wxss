@@ -1,0 +1,43 @@
+/* pages/study-plan/study-plan.wxss */
+.common{
+  width: 690rpx;
+  height: 84rpx;
+  margin-top: 42rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+}
+.viewForm {
+  padding-top: 48rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+/* 留学申请 */
+.formTitle {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #333333;
+}
+/* 日期选择器 */
+.viewInput {
+  border-bottom: 2rpx solid #cccccc;
+  font-size: 28rpx;
+  color: #C0C0C0;
+  margin-top: 41rpx;
+  height: 86rpx;
+}
+.viewInput input {
+  margin-bottom: 29rpx;
+}
+/* 提交按钮 */
+.viewButton {
+  background-color: #2F71F6;
+  color: #FFFFFF;
+  font-size: 32rpx;
+  width: 630rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 81rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}

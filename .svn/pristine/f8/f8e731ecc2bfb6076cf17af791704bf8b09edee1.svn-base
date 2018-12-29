@@ -1,0 +1,14 @@
+<!-- pages/question-info/question-info.wxml -->
+<import src="../../wxParse/wxParse.wxml"/>
+<view class="question-info">
+    <text class='title'>{{videoData.online_title}}</text>
+
+    <view class="questioner">
+        <video controls='true' show-center-play-btn='true' custom-cache='{{false}}' poster='{{inter.video_cover}}' src="{{inter.video_content}}" />
+    </view>
+    
+
+</view>
+<view style='padding:30rpx;font-size:28rpx;'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>

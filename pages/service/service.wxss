@@ -1,0 +1,8 @@
+/* pages/service/service.wxss */
+image{
+width:750rpx;
+height:1334px;
+display:inline-block;
+overflow:hidden;
+
+}

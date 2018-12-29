@@ -1,0 +1,23 @@
+/* pages/user/user.wxss */
+page {
+    display: block;
+    background: #f6f6f6;
+}
+.getUserInfo{
+    padding: 200rpx 30rpx; 
+}
+.getUserInfo .tips{
+    display: block;
+    font-size: 35rpx;
+    line-height: 70rpx
+}
+.getUserInfo .tips text{
+    display: block;
+}
+.getUserInfo button{
+    border: none;
+    background: #0084FF;
+    color: #fff;
+    font-size: 40rpx;
+    margin-top: 50rpx
+}

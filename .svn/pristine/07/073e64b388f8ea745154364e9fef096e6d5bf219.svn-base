@@ -1,0 +1,14 @@
+<!--pages/news/news.wxml-->
+<view class='List' >
+  <view class='Li' wx:for="{{newsList}}" wx:key="key">
+     <navigator url='/pages/info/info?newsId={{item.letter_id}}'>
+      <view class='ListRight'>
+       <view class='Date'>{{item.letter_create_time}}</view>
+        <view class='Title'>{{item.letter_name}}</view> 
+        <view class='content'>{{item.letter_content}}</view>
+      </view>
+      <image class='ListLeft' src="{{api}}images/text/photo.jpg"></image>
+    </navigator>
+  </view>
+  <view class="tips" wx:if="{{newsList.length==0}}">暂无数据！</view>
+</view>

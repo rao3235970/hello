@@ -1,0 +1,5 @@
+<!--pages/opening-information/opening-information.wxml-->
+<!-- <text>pages/opening-information/opening-information.wxml</text> -->
+<navigator class="infoUl" wx:for="{{contentTitleUrl}}" data-item="{{item}}" url='/pages/information-details/information-details' hover-class="none">
+  <text class="textView">{{item.information_title}}</text>
+</navigator>

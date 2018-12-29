@@ -1,0 +1,16 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <!-- 日期选择器 mode="date" -->
+  <view class="appointmentDate">
+    <picker mode="date" value="{{date}}" name='create_time' start="2015-09-01" bindchange="bindDateChange">
+      <view class="picker">
+        日期选择: {{date}}
+      </view>
+    </picker>
+  </view>
+  <input type='text' name='enroll_edu' placeholder='最高学历' class='education'></input>
+  <input type='text' name='enroll_name' placeholder='请输入姓名' class='name'></input>
+  <input type='text' name='enroll_profession' placeholder='报名专业' class='specialty'></input>
+  <input type='number' name='enroll_tel' placeholder='请输入电话' class='phone'></input>
+  <!-- 提交按钮 -->
+  <button class="formbtn" formType="submit">立即预约</button>
+</form>

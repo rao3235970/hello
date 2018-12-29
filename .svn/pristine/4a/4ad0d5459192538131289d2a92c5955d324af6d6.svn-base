@@ -1,0 +1,141 @@
+/* pages/special-school/special-school.wxss */
+text view image{
+  margin: 0rpx;
+  padding: 0rpx;
+}
+
+.searchBox {
+  display: flex;
+  width: 690rpx;
+  height: 76rpx;
+  background-color: #f5f5f5;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.searchBox image {
+  width: 26rpx;
+  height: 26rpx;
+  padding-right: 10rpx;
+  margin-top: 28rpx;
+}
+
+.searchSchoolName {
+  display: inline-block;
+  width: 250rpx;
+  height: 28rpx;
+  font-size: 14px;
+  color: #999;
+  line-height: 28rpx;
+  margin-top: 14rpx;
+  text-align: left;
+}
+
+.selectBox {
+  width: 690rpx;
+  height: 116rpx;
+}
+
+.recom .select_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #999;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.recom .li {
+  width: 166rpx;
+  overflow: hidden;
+}
+
+.recom .select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 70rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.recom .select_text {
+  font-size: 24rpx;
+  flex: 1;
+  color: #999;
+}
+
+.recom .select_img {
+  width: 26rpx;
+  height: 26rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.recom .select_img_rotate {
+  transform: rotate(180deg);
+}
+
+.recom .option_box {
+  position: absolute;
+  top: 70rpx;
+  width: 166rpx;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  height: 0;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+
+.recom .option {
+  display: block;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  color: #999;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx;
+}
+
+.welfare {
+  padding: 30rpx;
+}
+
+.welfare .title {
+  font-size: 24rpx;
+  font-weight: 600;
+}
+
+.welfare .ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+
+.welfare .ul navigator {
+  width: 220rpx;
+}
+
+.recom {
+  padding: 10rpx 30rpx;
+}
+
+.recom .ul navigator {
+  width: 340rpx;
+  margin: 10rpx 0;
+}
+
+.recom .ul .tit {
+  font-size: 24rpx;
+  line-height: 50rpx;
+  color: #999;
+}

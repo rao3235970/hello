@@ -1,0 +1,21 @@
+<!--pages/study-tour/study-tour.wxml-->
+<!-- 搜索框 -->
+<view class="container">
+  <view class="searcher">
+    <image src="{{api}}images/searchcopy@2x.png"></image>
+    <input type="text" placeholder='请输入城市或景点' bindconfirm='findCity'></input>
+  </view>
+  <view class="content" wx:if="{{content}}">
+    <navigator url="/pages/study-detail/study-detail?tour_id={{item.tour_id}}" class="studyList" wx:for="{{imgUrls}}" wx:key="key">
+      <image src="{{item.tour_cover}}"></image>
+      <view class="studyText">
+        <text class="textTitle">{{item.tour_name}}</text>
+        <text class="textContent">{{item.tour_descript}}</text>
+        <text class="textMoney">{{item.tour_money}}</text>
+        <text class="textDiscuss" >{{comment}}条评论</text>
+      </view>
+    </navigator>
+
+  </view>
+  <view class="nullView" wx:if="{{wu}}"> 暂无记录</view>
+</view>

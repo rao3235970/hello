@@ -1,0 +1,155 @@
+<!-- pages/study-detail/study-detail.wxml -->
+<import src="../../wxParse/wxParse.wxml" />
+<!-- 轮播图 -->
+<view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 基本信息 -->
+<view class="basicInform" wx:for="{{imgTitle}}">
+  <view class="scenicName">{{item.tour_title}}</view>
+  <view class="scenicDate">{{item.start_time}}游玩</view>
+  <view class="viewMoney">
+    <view class="scenicMoney">¥{{item.tour_ticket}}</view>
+    <!-- 加减input框 -->
+    <view class='stepper'>
+      <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+      <input bindinput='bindManual' value='{{num}}'></input>
+      <text bindtap='bindPlus'>+</text>
+    </view>
+  </view>
+  <view class="viewRuler">
+    <view class="scenicReserve">{{item.tour_destine}}</view>
+    <view class="scenicSelf">{{item.tour_details}}</view>
+  </view>
+</view>
+<!-- 评论 -->
+<view class="viewDiscuss">
+  <view class="discussText">评论(99+)</view>
+  <view class="discussMore">查看更多</view>
+  <image src="{{api}}images/titlebackcopy15@3x.png" class="imageMore"></image>
+</view>
+<!-- 行程介绍 -->
+<view class="tourIntro" wx:for="{{imgTitle}}">
+  <view class="introTitle">行程介绍</view>
+  <view class="introContent">
+    教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位教委公布了该区今年小学升初中电脑派位
+  </view>
+  <image src="{{item.tour_img}}" class="introImage"></image>
+</view>
+<!-- 地址和出行路线 -->
+<view class="tourLocation" wx:for="{{imgTitle}}">
+  <!-- 地址 -->
+  <view class="tourAddress">
+    <image src="{{api}}images/address.png" class="addressImage"></image>
+    <view class="addressContent">地址:{{item.tour_address}}</view>
+  </view>
+  <!-- 出行路线 -->
+  <view class="tourTravel">
+    <image src="{{api}}images/yytenterplace@2x.png" class="travelImage"></image>
+    <view class="travelContent">出行路线:{{item.tour_rose}}</view>
+  </view>
+</view>
+<!-- 用户评论 -->
+<view class="personView">
+  <!-- 标题 -->
+  <view class="personTitle">用户评论</view>
+  <!-- 评论列表 -->
+  <view class="discussUl" wx:for="{{imgDiscuss}}">
+    <image src="{{item.avatar}}" class="personImage"></image>
+    <view class="discussContent">
+      <view class="discussName">{{item.nickname}}</view>
+      <view class="discussDate">{{item.createtime}}</view>
+      <view class="discussTextContent">{{item.content}}</view>
+    </view>
+  </view>
+</view>
+
+<!-- <image src="/images/bannerone.png" class="banner"></image> -->
+<!-- <view wx:for="{{imgTitle}}" wx:key="key">
+  <text class="textTitle">{{item.tour_title}}</text>
+  <text class="textDate">{{item.start_time}}游玩</text>
+  <view class="viewSmall">
+    <view class="viewText">
+      <text class="textMoney">￥{{item.tour_ticket}}</text>
+      <view class="textSmall">
+        <text class="textCrestor">{{item.tour_destine}}</text>
+        <text class="textOneself">{{item.tour_details}}</text>
+      </view>
+    </view>
+    <!-- 加减input框 -->
+<!-- <view class='stepper'>
+      <text class='{{minusStatus}}' type='number' bindtap='bindMinus'>-</text>
+      <input bindinput='bindManual' value='{{num}}'></input>
+      <text bindtap='bindPlus'>+</text>
+    </view> -->
+<!-- <view class="wideLineFirst"></view>
+<view class="viewDiscuss">
+  <text class="textDiscuss">评论(99+)</text>
+  <text class="textMore">查看更多</text>
+  <image src="{{api}}images/titlebackcopy15@3x.png" class="imageMore"></image>
+</view>
+<view class="wideLineSecond"></view>
+<!-- 行程介绍 -->
+<!-- <view class="content" wx:for="{{imgTitle}}" wx:key="key">
+  <text class="contentTitle">行程介绍</text>
+  <view class="thinLine"></view>
+  <view class="contentText">
+    <view class="firstParagraph">
+      <!-- {{item.tour_run}} -->
+<!-- <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+    </view>
+    <image src="{{item.tour_img}}"></image> -->
+<!-- <view class="otherParagraph">
+      学方式，昨日东城区教委公布的2016年小学方式，昨日东城区教委公布的2016年小学方式，昨日东城区教委公布的2016年小学方式，昨日东城区教委公布的2016年小学方式，昨日东城区教委公布的2016年小内容很多。
+    </view> -->
+<!-- </view>
+  <view class="contentAddress">
+    <view class="viewAddress">
+      <image src="{{api}}images/address.png"></image>
+      <text>地址:{{item.tour_address}}</text>
+    </view>
+    <view class="viewRoute">
+      <image src="{{api}}images/yytenterplace@2x.png"></image>
+      <text>出行路线:{{item.tour_rose}}</text>
+    </view>
+  </view>
+  <view class="wideLineThird"></view>
+</view> -->
+<!-- 用户评论 -->
+<!-- <view class="viewTitle">
+  <text class="discussTitle">用户评论</text>
+</view>
+<view class="discussList" wx:for="{{imgDiscuss}}" data-item="{{item}}">
+  <image src="/images/touxiang.png" class="viewImage"></image>
+  <view class="discussText">
+    <text class="discussName">{{item.nickname}}</text>
+    <text class="discussDate">{{item.createtime}}</text>
+    <text class="discussContent">{{item.content}}</text>
+  </view>
+</view>  -->
+<!-- <view class="discussList">
+  <image src="/images/touxiang.png" class="viewImage"></image>
+  <view class="discussText">
+    <text class="discussName">111</text>
+    <text class="discussDate">111</text>
+    <text class="discussContent">44444</text>
+  </view>
+</view> -->
+<!-- 用户评论 -->
+<!-- <view class="contentDiscuss">
+  <text class="titleDiscuss">用户评论</text>
+  <view class="commentList" wx:for="{{imgDiscuss}}" data-item="{{item}}">
+    <image src="/images/touxiang.png"></image>
+    <view class="listText">
+      <text class="listName">{{item.nickname}}</text>
+      <text class="listDate">{{item.createtime}}</text>
+      <view class="listContent">{{item.content}}</view>
+    </view>
+  </view>
+</view> -->

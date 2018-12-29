@@ -1,0 +1,8 @@
+<!--pages/work-study/work-study.wxml-->
+<!-- <text>pages/work-study/work-study.wxml</text> -->
+<view class="contain">
+  <navigator class="li" url="/pages/workStudy-details/workStudy-details?answer_id={{item.answer_id}}" hover-class='none' wx:for="{{contentLiUrl}}" data-item="{{item}}">
+    <view class="viewTitle">{{item.answer_title}}</view>
+    <view class="viewContent">{{item.answer_content}}</view>
+  </navigator>
+</view>

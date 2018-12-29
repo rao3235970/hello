@@ -1,0 +1,104 @@
+/* pages/training/training.wxss */
+/* 校园动态和最新开班信息 */
+.viewTitle {
+  width: 100%;
+  padding: 29rpx 22rpx;
+  overflow: hidden;
+}
+.activity image {
+  display: block;
+  width: 336rpx;
+  height: 188rpx;
+  float: left;
+}
+.information image {
+  display: block;
+  width: 336rpx;
+  height: 188rpx;
+  float: left;
+  margin-left: 36rpx;
+}
+/* 培训中心 */
+image{
+  width: 100%;
+  height:auto;
+  border:0;
+  vertical-align:text-bottom;
+}
+.recom .li{
+  width: 200rpx;
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+.welfare{
+  padding: 30rpx;
+}
+.welfare .title{
+  font-size: 40rpx;
+  font-weight: 900;
+  margin-bottom: 40rpx;
+}
+.welfare .ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+.welfare .ul navigator{
+  width: 220rpx;
+}
+.recom{
+  padding: 10rpx 30rpx;
+  margin-top: 64rpx;
+}
+.recom .ul navigator{
+  width: 340rpx;
+  margin: 20rpx 0;
+}
+.recom .ul .tit{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+  margin-top: 21.8rpx;
+}
+/* 在校生动态 */
+.model .li{
+  width: 200rpx;
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+.dynamic{
+  padding: 30rpx;
+}
+.dynamic .title{
+  font-size: 40rpx;
+  font-weight: 900;
+  margin-bottom: 40rpx;
+}
+.dynamic .ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+.dynamic .ul navigator{
+  width: 220rpx;
+}
+.model{
+  padding: 10rpx 30rpx;
+  margin-top: 22rpx;
+}
+.model .ul navigator{
+  width: 340rpx;
+  margin: 12rpx 0;
+}
+.model .ul .tit{
+  font-size: 28rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+  margin-top: 21.8rpx;
+}

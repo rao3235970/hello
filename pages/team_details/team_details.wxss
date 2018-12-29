@@ -1,0 +1,59 @@
+/* pages/team_details/team_details.wxss */
+.countnum{
+  width: 100%;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ECECEC;
+  padding-left:30rpx;
+padding-top:20rpx;
+padding-bottom:20rpx;
+
+
+}
+.tou{
+width:100rpx;
+height:100rpx;
+float:left;
+margin-right: 15rpx;
+}
+.list{
+    border-top: 1px solid #ECECEC;
+    overflow: hidden;
+}
+.list .li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx;
+    border-bottom: 1px solid #ECECEC
+}
+.list .li .name{
+    width: 500rpx;
+    font-size: 35rpx;
+    line-height: 50rpx;
+}
+.list .li .name text{
+    display: block;
+}
+.list .li .name text:last-child{
+    /* font-size: 30rpx;
+    color: #0F1D37; */
+}
+.list .li .arrow{
+    /* width: 25rpx; */
+    font-size: 24rpx;
+    text-align: right;
+}
+.nickname{
+  font-size: 30rpx;
+}
+.phone{
+  font-size: 25rpx;
+  color: #999;
+}
+ .tips{
+    width: 100%;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 100rpx;
+}

@@ -1,0 +1,274 @@
+/* pages/training/training.wxss */
+
+/* 校园动态和最新开班信息 */
+
+/* page {
+  background-color: #F6F6F6;
+} */
+
+.timed {
+  background: #f5926c;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  margin-top: 38rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.times {
+  text-align: center;
+  background: #7fa8fa;
+  color: #fff;
+  font-size: 28rpx;
+  margin-top: 38rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.swiper image {
+  height: 350rpx;
+}
+
+.hot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f7ff;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.hot .hotImg {
+  width: 40rpx;
+  height: 43rpx;
+}
+
+.hot .swiper_container {
+  width: 90%;
+  height: 43rpx;
+  line-height: 43rpx;
+}
+
+.hot .swipe swiper {
+  width: 100%;
+  height: 350rpx;
+}
+
+.hot .swiper_item {
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.back_title {
+  width: 25rpx;
+  height: 30rpx;
+  margin-top: 8rpx;
+}
+
+.welfare {
+  padding: 30rpx;
+}
+
+.welfare .title {
+  display: flex;
+  font-size: 35rpx;
+  font-weight: 600;
+  justify-content: space-between;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.welfare .ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+}
+
+.welfare .ul navigator {
+  width: 220rpx;
+}
+
+.viewTitle {
+  width: 100%;
+  padding: 29rpx 22rpx;
+  overflow: hidden;
+}
+
+.activity image {
+  display: block;
+  width: 336rpx;
+  height: 188rpx;
+  float: left;
+}
+
+.information image {
+  display: block;
+  width: 336rpx;
+  height: 188rpx;
+  float: left;
+  margin-left: 36rpx;
+}
+
+/* 培训中心 */
+
+image {
+  width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: text-bottom;
+}
+
+.recom .li {
+  width: 200rpx;
+  overflow: hidden;
+  /* margin-top: 40rpx; */
+}
+
+.welfare {
+  padding: 30rpx;
+}
+
+.welfare .title {
+  font-size: 40rpx;
+  font-weight: 900;
+  margin-bottom: 40rpx;
+}
+
+.welfare .ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 30rpx auto;
+}
+
+.welfare .ul navigator {
+  width: 220rpx;
+}
+
+.recom {
+  padding: 10rpx 30rpx;
+  /* margin-top: 64rpx; */
+}
+
+.recom .ul .tit {
+  font-size: 28rpx;
+  /* line-height: 50rpx; */
+  font-weight: 700;
+  margin-top: 21.8rpx;
+  height: 75rpx;
+}
+
+/* 在校生动态 */
+
+.model .li {
+  /* width: 200rpx; */
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+
+.dynamic {
+  padding: 30rpx;
+}
+
+.dynamic .title {
+  font-size: 40rpx;
+  font-weight: 900;
+  margin-bottom: 40rpx;
+}
+
+.dynamic .ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30rpx auto;
+  margin-bottom: 60rpx;
+}
+
+.dynamic .ul navigator {
+  width: 220rpx;
+}
+
+.model {
+  padding: 10rpx 30rpx;
+  margin-top: 22rpx;
+}
+
+.model .ul navigator {
+  width: 340rpx;
+  margin: 12rpx 0;
+}
+
+.model .ul .tit {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  font-weight: 700;
+  margin-top: 21.8rpx;
+}
+
+.liImg {
+  width: 333rpx;
+  height: 190rpx;
+  border-radius: 15rpx;
+}
+
+.liImgs {
+  width: 333rpx;
+  height: 190rpx;
+  border-radius: 15rpx;
+  position: relative;
+}
+
+.tits {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: absolute;
+  bottom: 3px;
+  width: 333rpx;
+  left: 0;
+}
+
+.ti {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  position: absolute;
+  width: 333rpx;
+  left: 0;
+  font-size: 28rpx;
+  font-weight: 700;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  bottom: 10rpx;
+}
+
+.recom .ul .tits {
+    background: rgba(0, 0, 0, 0.5);
+  font-size: 28rpx;
+  font-weight: 700;
+  height: 75rpx;
+  line-height: 75rpx;
+  text-align: center;
+  bottom: 100rpx;
+}
+
+.recom .ul navigator {
+  position: relative;
+  margin-bottom: 20rpx;
+  width: 340rpx;
+}

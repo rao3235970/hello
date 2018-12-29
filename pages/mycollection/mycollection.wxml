@@ -1,0 +1,32 @@
+<view class='head'>
+  <view class='left{{active}}' bindtap='school'>游学
+    <view class='{{lefta}}'></view>
+  </view>
+  <view class='right{{actives}}' bindtap='newclass'>最新开班
+    <view class='{{leftb}}'></view>
+  </view>
+</view>
+
+<view class='content'  wx:if="{{school}}" >
+<navigator url="/pages/study-detail/study-detail?tour_id={{item.tour_id}}"wx:for="{{datas}}" data-item="{{item}}">
+  <view class='school' >
+    <image src='{{item.tour_cover}}' class='tou'></image>
+    <text class='title'>{{item.tour_name}}</text>
+    <text class='time'>{{item.tour_destine}}</text>
+    <image src='/images/dels.png' class='del' catchtap='delschool' data-index="{{item.tour_id}}"></image>
+  </view>
+  </navigator>
+</view>
+<view class='wu' wx:if="{{xs}}">暂无收藏</view>
+
+<view class='content'  wx:if="{{newclass}}">
+<navigator class="infoUl" wx:for="{{data}}" data-item='{{item}}' url='/pages/information-details/information-details?information_id={{item.information_id}}'>
+  <view class='s_class'>
+    <text class='title'>{{item.information_title}}</text>
+    <text class='time'>{{item.create_time}}</text>
+    <image src='/images/dels.png' class='s_del' catchtap='delnewclass' data-index="{{item.information_id}}"></image>
+  </view>
+</navigator>
+</view>
+<view class='wu' wx:if="{{xss}}">暂无收藏</view>
+

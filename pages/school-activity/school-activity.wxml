@@ -1,0 +1,9 @@
+<!--pages/school-activity/school-activity.wxml-->
+<!-- <text>pages/school-activity/school-activity.wxml</text> -->
+<navigator class="activityUl" wx:for="{{textUrl}}" data-item="{{item}}" hover-class="none" url='/pages/activity-details/activity-details?id={{item.dynamic_id}}'>
+  <image src="{{item.dynamic_img}}"></image>
+  <view class="viewText">
+    <view class="viewContent">{{item.dynamic_title}}</view>
+    <view class="viewDate">{{item.create_time}}</view>
+  </view>
+</navigator>

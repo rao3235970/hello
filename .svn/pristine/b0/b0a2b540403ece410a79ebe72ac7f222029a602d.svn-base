@@ -1,0 +1,26 @@
+/* pages/faq/faq.wxss */
+.answerBox{
+  width: 690rpx;
+  margin: 0rpx auto;
+  margin-bottom: 30rpx;
+}
+.answerTitle{
+  font-size: 32rpx;
+  font-weight: bolder;
+}
+.answerTime{
+  font-size: 28rpx;
+  color: #808080;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+/* .answerContent{
+  font-size: 30rpx;
+  width: 690rpx;
+  height: 50rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-bottom: 10rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+} */

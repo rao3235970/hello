@@ -1,0 +1,44 @@
+/* pages/resp/resp.wxss */
+.appointmentDate{
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border: 2rpx solid #808080;
+  margin-bottom: 50rpx;
+}
+.education{
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border: 2rpx solid #808080;
+  margin-bottom: 50rpx;
+}
+.name{
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border: 2rpx solid #808080;
+  margin-bottom: 50rpx;
+}
+.specialty{
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border: 2rpx solid #808080;
+  margin-bottom: 50rpx;
+}
+.phone{
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border: 2rpx solid #808080;
+  margin-bottom: 50rpx;
+}
+.formbtn{
+  width: 600rpx;
+  margin: 0rpx auto;
+  background: #0084FF;
+  color: #fff;
+  /* font-size:40rpx; */
+  margin-top:50rpx;
+}

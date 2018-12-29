@@ -1,0 +1,75 @@
+<!-- pages/help/help.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}" wx:key="key">
+            <swiper-item>
+                <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="title">
+    <view class="money">
+        <text>¥99.9</text>
+        <text>价值¥399</text>
+        <text>需要10人助力</text>
+    </view>
+    <view class="tit">
+        日本签证
+        <text>已有1001人1元领证</text>
+    </view>
+</view>
+<!-- 助力晒单 -->
+<view class="evaluate">
+    <view class="more">
+        <text>助力晒单</text>
+        <navigator class="nav" hover-class="none">
+            查看更多
+            <image src="{{api}}images/my_gd.png" />
+        </navigator>
+    </view>
+    <view class="li">
+        <view class="ev-title">
+            <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+            <view class="name">小脑斧</view>
+            <view class="time">2018-10-23</view>
+        </view>
+        <view class="text">下面我谈谈在家庭中我是如何培养教育孩子，如何容在思想品德方面,我经常告戒她要讲文明懂讲文明.</view>
+    </view>
+    <view class="li">
+        <view class="ev-title">
+            <image class="photo" src="{{api}}images/card-3copy@3x.png" />
+            <view class="name">小脑斧</view>
+            <view class="time">2018-10-23</view>
+        </view>
+        <view class="text">下面我谈谈在家庭中我是如何培养教育孩子，如何容在思想品德方面,我经常告戒她要讲文明懂讲文明.</view>
+    </view>
+</view>
+<!-- 详情 -->
+<view class="info">
+    <view class="more">
+        <text>商品详情</text>
+    </view>
+    <view class="text">
+        下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如
+    </view>
+</view>
+<view class="introduction">
+    <view class="more">
+        <text>商品介绍</text>
+    </view>
+    <view class="text">
+        下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如下面我谈谈在家庭中我是如何培养教育孩子，如何容如
+    </view>
+</view>
+<!-- 底部footer -->
+<view class="footer">
+    <view class="service">
+        <image src="{{api}}images/kefu@2x.png" />
+        <text>客服</text>
+    </view>
+    <view class="btn">
+        <text>1元领取</text>
+    </view>
+</view>

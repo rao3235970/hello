@@ -1,0 +1,6 @@
+<!--pages/lang-school/lang-school.wxml-->
+<!-- 顶部学校分类 -->
+<view class='schoolClassify'>
+  <image src='./images/card-1copy2@2x.png'></image>
+</view>
+

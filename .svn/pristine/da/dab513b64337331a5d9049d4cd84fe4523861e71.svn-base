@@ -1,0 +1,17 @@
+<!--pages/work-study/work-study.wxml-->
+<!-- <text>pages/work-study/work-study.wxml</text> -->
+<view class="contain">
+  <navigator class="li" url="/pages/workStudy-details/workStudy-details?answer_id={{item.answer_id}}" hover-class='none' wx:for="{{contentLiUrl}}" data-item="{{item}}">
+    <view class="viewTitle">{{item.answer_title}}</view>
+    <view class="viewContent">{{item.answer_content}}</view>
+  </navigator>
+
+  <view class='see' bindtap='see' wx:if="{{see_code}}">查看我的边学边赚二维码 <image class='b_img' src='https://dispatch.yuxwl.top/images/back.png' ></image></view>
+ 
+  <view class='btn' wx:if="{{!see_code}}">
+   <button bindtap='button'>申请边学边赚</button>
+  </view>
+ 
+
+ 
+</view>

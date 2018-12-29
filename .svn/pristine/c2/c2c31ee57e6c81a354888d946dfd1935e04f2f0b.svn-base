@@ -1,0 +1,50 @@
+.common{
+  width: 690rpx;
+  height: 100rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  font-size: 30rpx;
+}
+.formbtn {
+  width: 70%;
+  font-size: 35rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 120rpx auto;
+  text-align: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 50rpx;
+}
+
+.no-ecode{
+  width: 476rpx;
+  height: 212rpx;
+  margin: 162rpx auto 158rpx;
+  display: block;
+}
+button{
+  width:512rpx;
+  height:79rpx;
+  background:rgba(255,255,255,1);
+  border:2rpx solid rgba(47,113,246,1);
+  border-radius:40rpx;
+  font-size:34rpx;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  color:rgba(47,113,246,1);
+  line-height:79rpx;
+}
+.code{
+  width:422rpx;
+  height:424rpx;
+  margin: 156rpx auto;
+  display: block;
+}
+.text{
+  text-align: center;
+  display: block;
+  color:rgba(47,113,246,1);
+  font-size:34rpx;
+
+}

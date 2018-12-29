@@ -1,0 +1,53 @@
+/* pages/resp/resp.wxss */
+
+.appointmentDate {
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+}
+
+.education {
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+}
+
+.name {
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+}
+
+.specialty {
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+}
+
+.phone {
+  width: 690rpx;
+  height: 50rpx;
+  margin: 0rpx auto;
+  border-bottom: 2rpx solid #e5e5e5;
+  margin-bottom: 50rpx;
+}
+
+.formbtn {
+  width: 70%;
+  font-size: 35rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 120rpx auto;
+  text-align: center;
+  background: #0084ff;
+  color: #fff;
+  border-radius: 50rpx;
+}

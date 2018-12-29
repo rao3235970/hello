@@ -1,0 +1,161 @@
+<!-- index.wxml -->
+<!-- 广告轮播 -->
+<view class="swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.ad_img}}" class="slide-image" width="355" height="470" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 资讯 -->
+<view class="hot">
+  <image class="hotImg" mode="widthFix" src="{{api}}images/tongzhi@3x.png" />
+  <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="2000">
+    <block wx:for="{{msgList}}">
+      <navigator url="{{item.url}}" open-type="navigate">
+        <swiper-item>
+          <view class="swiper_item">{{item.ad_name}}</view>
+        </swiper-item>
+      </navigator>
+    </block>
+  </swiper>
+</view>
+<!-- 菜单 -->
+<view class="nav">
+  <navigator url="/pages/lang-school/lang-school" hover-class="none">
+    <image src="{{api}}images/baogaocopy4@3x.png"></image>
+    <text>语言学校</text>
+  </navigator>
+  <navigator url="/pages/special-school/special-school" hover-class="none">
+    <image src="{{api}}images/jieducopy4@3x.png"></image>
+    <text>专门学校</text>
+  </navigator>
+  <navigator url="/pages/university/university" hover-class="none">
+    <image src="{{api}}images/xuetangcopy4@3x.png"></image>
+    <text>大学</text>
+  </navigator>
+  <navigator url="/pages/training/training" hover-class="none">
+    <image src="{{api}}images/qiandaocopy4@3x.png"></image>
+    <text>日语培训</text>
+  </navigator>
+  <navigator url="/pages/news/news" hover-class="none">
+    <image src="{{api}}images/baogaocopy5@3x.png"></image>
+    <text>留学资讯</text>
+  </navigator>
+  <navigator url="/pages/faq/faq" hover-class="none">
+    <image src="{{api}}images/jieducopy5@3x.png"></image>
+    <text>答疑解惑</text>
+  </navigator>
+  <navigator url="/pages/study-tour/study-tour" hover-class="none">
+    <image src="{{api}}images/xuetangcopy5@3x.png"></image>
+    <text>游学</text>
+  </navigator>
+  <navigator url="/pages/about/about" hover-class="none">
+    <image src="{{api}}images/qiandaocopy5@3x.png"></image>
+    <text>关于我们</text>
+  </navigator>
+  <!-- <navigator url="/pages/time/time" hover-class="none">
+    <image src="{{api}}images/qiandaocopy5@3x.png"></image>
+    <text>关于我们</text>
+  </navigator> -->
+</view>
+<!-- 广告图 -->
+<view class="tag">
+  <swiper indicator-dots="{{indicatorDot}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{adimgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.ad_img}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 福利专区 -->
+<view class="welfare">
+  <view class="title">福利专区</view>
+  <view class="ul">
+    <navigator class="li" url="/pages/work-study/work-study" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/card-1@3x.png"  bindtap='onClickReturn'/>
+    </navigator>
+    <navigator class="li" url="/pages/group/group" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/card-2@3x.png" />
+    </navigator>
+    <navigator class="li" url="/pages/helpInfo/helpInfo" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/card-3@3x.png" />
+    </navigator>
+  </view>
+</view>
+<!-- 学习专区 -->
+<view class="welfare recom">
+  <view class="title">学习专区</view>
+  <!-- <view class='select_box'>
+    <view class="li">
+      <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{selectData[index]}}</text>
+        <image class='select_img {{show&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{show}}" style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li">
+      <view class='select' catchtap='selectTapa'>
+        <text class='select_text'>{{selecta[indexa]}}</text>
+        <image class='select_img {{showa&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showa}}" style='height:{{showa?(selecta.length>5?300:selecta.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selecta.length-1&&"border:0;"}}' wx:for='{{selecta}}' wx:key='this' data-index='{{index}}' catchtap='optionTapa'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+    <view class="li">
+      <view class='select' catchtap='selectTapb'>
+        <text class='select_text'>{{selectb[indexb]}}</text>
+        <image class='select_img {{showb&&"select_img_rotate"}}' src='{{api}}images/icon_drop@3x.png'></image>
+      </view>
+      <view class='option_box' wx:if="{{showb}}" style='height:{{showb?(selectb.length>5?300:selectb.length*60):0}}rpx;'>
+        <text class='option' style='{{index==selectb.length-1&&"border:0;"}}' wx:for='{{selectb}}' wx:key='this' data-index='{{index}}' catchtap='optionTapb'>
+          {{item}}
+        </text>
+      </view>
+    </view>
+  </view> -->
+  <view class="ul">
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/xianshang@2x.png" />
+      <view class="tit">线上学习</view>
+    </navigator>
+    <navigator class="li" url="/pages/opening-information/opening-information" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/xianxia@2x.png" />
+      <view class="tit">线下学习</view>
+    </navigator>
+  </view>
+</view>
+<!-- 为你推荐 -->
+<view class="welfare recom">
+  <view class="title">为你推荐</view>
+  <view class="ul">
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/shengxue@2x.png" />
+    </navigator>
+    <navigator class="li" url="" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/meishu@2x.png" />
+    </navigator>
+    <navigator class="li" url="/pages/school-library/school-library" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guimo@2x.png" />
+    </navigator>
+    <navigator class="li" url="/pages/school-library/school-library" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/guoji@2x.png" />
+    </navigator>
+    <navigator class="li" url="/pages/school-library/school-library" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/bangong@2x.png" />
+    </navigator>
+    <navigator class="li" url="/pages/school-library/school-library" hover-class="none">
+      <image mode="widthFix" src="{{api}}images/jiuyezhid@2x.png" />
+    </navigator>
+  </view>
+</view>

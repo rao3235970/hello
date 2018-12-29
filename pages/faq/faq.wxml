@@ -1,0 +1,21 @@
+<!--pages/faq/faq.wxml-->
+<view class='head'>
+  <view data-index="1" bindtap='btn' class='left{{activel}}'>
+    答疑解惑
+    <view class='leftb' wx:if="{{xsl}}"></view>
+  </view>
+
+  <view data-index="2" bindtap='btn' class='right{{activer}}'>
+    案例分析
+    <view class='leftb' wx:if="{{xsr}}"></view>
+  </view>
+</view>
+<view class='list'>
+<view class='answerBox' wx:for="{{answerList}}" wx:key="key">
+  <navigator url='/pages/answer-details/answer-details?information_type={{tab}}&information_id={{item.information_id}}' hover-class='none'>
+    <view class='answerTitle'>{{item.information_title}}</view>
+    <view class='answerTime'>{{item.create_time}}</view>
+    <!-- <view class='answerContent'>{{item.answer_content}}</view> -->
+  </navigator>
+</view>
+</view>

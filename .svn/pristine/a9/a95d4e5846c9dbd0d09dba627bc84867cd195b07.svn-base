@@ -1,0 +1,360 @@
+/* pages/group/group.wxss */
+page{
+    display: block;
+}
+image{
+    width: 100%;
+    height:auto;
+    border:0;
+    vertical-align:text-bottom;
+}
+.isC{
+  font-size: 28rpx;
+  
+}
+button::after{
+    border: none;
+}
+.swiper image{
+    height: 350rpx;
+}
+.title{
+    padding: 30rpx;
+    border-bottom: 23rpx solid #F6F6F6;
+}
+.title .money{
+    display: block;
+    font-size: 30rpx;
+    overflow: hidden;
+}
+.title .money text:first-child{
+    font-size: 35rpx;
+    font-weight: 600;
+    color: #FF135B;
+    margin-right: 20rpx;
+}
+.title .money text:nth-child(2){
+    text-decoration:line-through;
+}
+.title .money text:last-child{
+    float: right;
+}
+.title .tit{
+    margin-top: 20rpx;
+    font-size: 38rpx;
+    font-weight: 600
+}
+.more{
+    font-size: 33rpx;
+    padding: 35rpx 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+    overflow: hidden;
+}
+.more navigator{
+    float: right;
+    color: #999;
+}
+.more navigator image{
+    display: block;
+    float: right;
+    width: 16rpx;
+    height: 28rpx;
+    margin: 10rpx 0 0 15rpx;
+}
+.group{
+    border-bottom: 23rpx solid #F6F6F6;
+    overflow: hidden;
+}
+.group .li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35rpx 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+    overflow: hidden;
+}
+.group .li:last-child{
+    border-bottom: none;
+}
+.group .li .photo{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx
+}
+.group .li .name{
+    width: 150rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.group .li .msg{
+    width: 240rpx;
+    font-size: 32rpx;
+    text-align: right;
+}
+.group .li .msg text{
+    color: #FF135B
+}
+.group .li .msg view:last-child{
+    font-size: 28rpx;
+    color: #999;
+}
+.group .li .group-btn{
+    width: 150rpx;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #FF135B;
+    color: #fff;
+    font-size: 32rpx;
+    border: none
+}
+.evaluate{
+    border-bottom: 23rpx solid #F6F6F6;
+    overflow: hidden;
+}
+.evaluate .li{
+    padding: 35rpx 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+}
+.evaluate .li .ev-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.evaluate .li .ev-title .photo{
+    width: 80rpx;
+    height:80rpx;
+    border-radius: 50rpx
+}
+.evaluate .li .ev-title .name{
+    width: 320rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.evaluate .li .ev-title .time{
+    width: 240rpx;
+    font-size: 32rpx;
+    text-align: right;
+    color: #9E9E9E
+}
+.evaluate .li .text{
+    font-size: 35rpx;
+    line-height: 50rpx;
+    margin-top: 20rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.info{
+    margin-bottom: 150rpx;
+    border-bottom: 23rpx solid #F6F6F6;
+    overflow: hidden;
+}
+.info .text{
+    padding: 30rpx;
+    font-size: 35rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+.introduction{
+    margin-bottom: 150rpx;
+    overflow: hidden;
+}
+.introduction .text{
+    padding: 30rpx;
+    font-size: 35rpx;
+    line-height: 50rpx;
+    overflow: hidden;
+}
+.list{
+    display: block;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    min-height: 500rpx;
+    border-radius: 20rpx;
+    background: #fff;
+    z-index: 99999;
+}
+.list .now{
+    height: 700rpx;
+    overflow: hidden;
+}
+.list .now .tit{
+    font-size: 35rpx;
+    line-height: 80rpx;
+    padding: 20rpx 0;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #F6F6F6;
+}
+.list .now .ul{
+    height: 580rpx;
+}
+.list .now .li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30rpx;
+    border-bottom: 1px solid #F6F6F6;
+    overflow: hidden;
+}
+.list .now .li:last-child{
+    border-bottom: none;
+}
+.list .now .li .photo{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50rpx
+}
+.list .now .li .msg{
+    width: 300rpx;
+    font-size: 30rpx;
+}
+.list .now .li .msg view{
+    color: #999;
+    line-height: 50rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.list .now .li .msg view text{
+    display: block;
+    float: left;
+    max-width: 150rpx;
+    font-size: 35rpx;
+    font-weight: 600;
+    color: #000;
+    margin-right: 15rpx;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.list .now .li .group-btn{
+    width: 120rpx;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #FF135B;
+    color: #fff;
+    font-size: 32rpx;
+    border: none
+}
+.list .join{
+    text-align: center;
+    overflow: hidden;
+}
+.list .join .name{
+    font-size: 35rpx;
+    line-height: 55rpx;
+    margin-top: 50rpx;
+}
+.list .join .tips{
+    font-size: 32rpx;
+    line-height: 55rpx;
+}
+.list .join .ul{
+    padding: 35rpx 0;
+}
+.list .join .ul .li{
+    display: block;
+}
+.list .join .ul .li .photo{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 80rpx
+}
+.list .join .group-btn{
+    width: 90%;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 20rpx auto;
+    padding: 0;
+    background: #0084FF;
+    color: #fff;
+    font-size: 35rpx;
+    border: none
+}
+.list .close{
+    position: absolute;
+    top: -30rpx;
+    right: -30rpx;
+}
+.list .close image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.bgn{
+    display: block; 
+    width: 100%;
+    height: 100%;
+    background-color:rgb(102, 102, 102); 
+    filter:alpha(opacity=80);  
+    -moz-opacity:0.8;  
+    -khtml-opacity: 0.8; 
+    opacity: 0.8; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: 999; 
+    overflow: hidden;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 120rpx;
+    background: #fff;
+    border-top: 1px solid #D8D8D8;
+    overflow: hidden;
+}
+.footer .service{
+    width: 25%;
+    font-size: 30rpx;
+    color: #999;
+    text-align: center;
+}
+.footer .service image{
+    display: block;
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto;
+}
+.footer .service text{
+    display: block;
+}
+.footer .btn{
+    width: 37.5%;
+    height: 120rpx;
+    text-align: center;
+}
+.footer .btn text{
+    display: block;
+    padding: 3rpx;
+    font-size: 35rpx;
+    color: #fff;
+}
+.footer .btn text:first-child{
+    padding-top: 13rpx;
+    font-weight: 700
+}
+.footer .alone{
+    background: #C2D6FF;
+}
+.footer .initiate{
+    background: #2F71F6;
+}

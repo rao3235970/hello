@@ -1,0 +1,6 @@
+@import "../../wxParse/wxParse.wxss";
+.layout{
+  width: 690rpx;
+  font-size: 32rpx;
+  margin: 0rpx auto;
+}

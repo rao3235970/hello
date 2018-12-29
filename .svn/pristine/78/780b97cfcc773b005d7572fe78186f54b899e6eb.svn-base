@@ -1,0 +1,30 @@
+<view class="list">
+  <view class='item'>
+    <view class="name_phone">
+      <text>九九</text>
+      <text>13290909090</text>
+    </view>
+    <text class='state'>已留学</text>
+  </view>
+    <view class='item'>
+    <view class="name_phone">
+      <text>九九</text>
+      <text>13290909090</text>
+    </view>
+    <text class='state'>已留学</text>
+  </view>
+    <view class='item'>
+    <view class="name_phone">
+      <text>九九</text>
+      <text>13290909090</text>
+    </view>
+    <text class='state'>已留学</text>
+  </view>
+    <view class='item'>
+    <view class="name_phone">
+      <text>九九</text>
+      <text>13290909090</text>
+    </view>
+    <text class='state'>已留学</text>
+  </view>
+</view>

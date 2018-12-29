@@ -1,0 +1,65 @@
+/* pages/work-study/work-study.wxss */
+page{
+  background: #F6F6F6;
+}
+.see{
+  width: 100%;
+  height: 80rpx;
+  padding:30rpx 30rpx;
+  font-size:28rpx;
+  font-weight:500;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b_img{
+  width: 20rpx;
+  height: 20rpx;
+  margin-right: 70rpx;
+}
+.code{
+  margin: 0 auto;
+  display: flex;
+}
+.contain {
+  padding-top: 10rpx;
+  background: #fff;
+}
+.li {
+  border-bottom: 20rpx solid #F6F6F6;
+  padding: 30rpx 30rpx;
+}
+.viewTitle {
+  font-size: 38rpx;
+  font-weight: 500;
+}
+.viewContent {
+  width: 694rpx;
+  height: 132rpx;
+  margin-top: 18rpx;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+button,.button-hover{
+width:70%;
+font-size:35rpx;
+height:90rpx;
+line-height:90rpx;
+margin:10rpx auto;
+text-align:center;
+background:#0084ff;
+color:#fff;
+border-radius:50rpx;
+display: block;
+}
+.btn{
+  height:200rpx;
+padding-top:33px;
+
+}

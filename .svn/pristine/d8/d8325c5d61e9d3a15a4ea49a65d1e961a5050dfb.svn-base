@@ -1,0 +1,27 @@
+
+<block wx:if="{{state==2}}">
+  <form bindsubmit="formSubmit" bindreset="formReset" wx:if="{{!img}}">
+  <input  type='text' name='name' placeholder='请输入姓名' class='common' value="{{name}}"></input>
+  <input  type='number' name='tel' placeholder='请输入电话' class='common' value="{{tel}}"></input>
+  <input  type='number' name='qq' placeholder='请输入QQ号码' class='common' value="{{qq}}"></input>
+  <button class="formbtn" formType="submit">立即申请</button>
+</form>
+</block>
+<block wx:elif="{{state==0}}">
+  <view>
+  <image src='../../images/shenq_erweima.png' class='no-ecode'></image>
+</view>
+<text class='text'>正在审核...</text>
+</block>
+<block wx:elif="{{state==1}}">
+  <view>
+  <image src='../../images/shenq_erweima.png' class='no-ecode'></image>
+</view>
+<button>请在我的二维码中查看</button>
+</block>
+<block wx:else>
+  <view>
+  <image src='../../images/shenq_erweima.png' class='no-ecode'></image>
+</view>
+<button>申请失败</button>
+</block>

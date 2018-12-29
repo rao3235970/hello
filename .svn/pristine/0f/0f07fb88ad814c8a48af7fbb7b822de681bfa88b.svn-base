@@ -1,0 +1,17 @@
+<!--pages/groupInfo/groupInfo.wxml-->
+<view class="address">
+    <view class="name">收货人：晓晓晓</view>
+    <view class="tel">15800000000</view>
+    <view class="add">收货地址:</view>
+</view>
+<view class="orderInfo">
+    <image class="img" src="{{api}}images/card-3copy@3x.png" />
+    <view class="right">
+        <view class="title">大学大学大学大学大学</view>
+        <view class="price">¥955</view>
+    </view>
+</view>
+<view class="total">
+    <view class="price">合计：<text>¥955</text><text class="already">已助力388元</text></view>
+    <view class="confirm" bindtap="confirm">确认付款</view>
+</view>

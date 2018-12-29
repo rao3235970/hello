@@ -1,0 +1,46 @@
+<view class="list-wrap">
+  <block wx:for="{{data}}" wx:key="key">
+  
+    <view class='item'  wx:if="{{item.type==1}}">
+      <image src='{{item.avatar}}' class='head'></image>
+      <view class='content'>
+        <view class='name-time'>
+          <text>{{item.nickname}}</text>
+          <text>{{item.time}}</text>
+        </view>
+        <view class='content-title'>
+        {{item.interlocution_title}}
+        </view>
+        <view class='content-text'>
+        {{item.comment_content}}
+        </view>
+      </view>
+    </view>
+    <view class='item' wx:if="{{item.type==2}}">
+      <image src='{{item.avatar}}' class='head'></image>
+      <view class='content'>
+        <view class='name-time'>
+          <text>{{item.nickname}}</text>
+          <text>{{item.time}}</text>
+        </view>
+        <view class='content-title'>
+        {{item.video_title}}
+        </view>
+        <view class='content-video'>
+        <video src='{{item.video_content}}' controls></video>
+        <!-- <image src='http://dispatch.yuxwl.top/images/shipin_bofang@2x.png'></image> -->
+        </view>
+         <view class='content-text'>
+        {{item.vcomment_content}}
+        </view>
+      </view>
+    </view>
+  </block>
+ 
+  
+</view>
+
+<navigator class="requestion" hover-class="none" url="/pages/question/question" wx:if="{{data.length>0}}">
+  <image src='../../images/requestion.png'></image>
+</navigator>
+<text wx:if="{{datas}}" class='isNull'>暂无记录</text>

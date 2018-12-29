@@ -1,0 +1,5 @@
+<!--pages/question/question.wxml-->
+<form class="question" bindsubmit="questSubmit">
+    <textarea name="interlocution" placeholder="欢迎发布你们的问题，我们正静候您的问题" bindinput="inputs" placeholder-style="color:#C0C0C0;font-size:30rpx"/>
+    <button class="btn" formType="submit">发布</button>
+</form>
